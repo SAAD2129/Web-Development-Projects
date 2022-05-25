@@ -1,0 +1,23 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	height: 100vh;
+	background-color: #000;
+}
+.words {
+	transform: translateX(-5rem);
+}
+.heart {
+	position: fixed;
+	top: -1vh;
+	animation: fall 3s linear;
+	transform: translateY(0);
+}
+
+@keyframes fall {
+	to {
+		transform: translateY(105vh);
+	}
+}

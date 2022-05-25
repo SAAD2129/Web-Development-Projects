@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sidebar {
+  display: flex;
+}
+header {
+  display: grid;
+  flex-basis: 100%;
+  align-items: center;
+  /* background-color: blue; */
+  grid-template-columns: 1fr 4fr;
+}
+
+.logo span {
+  display: block;
+  margin: auto;
+  width: 5rem;
+  border-radius: 0.5rem;
+  border: 2px solid blue;
+}
+section {
+  display: flex;
+}
+.Slogans {
+  width: 50vw;
+  height: 40vw;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+.paras {
+  width: 50vw;
+  height: 40vw;
+  border: 2px;
+  /* border: 2px solid blue; */
+}
+.logo {
+  border: 2px solid black;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  height: 4.8rem;
+  justify-content: flex-end;
+}
+nav li {
+  list-style: none;
+  padding: 0rem 2rem;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(36, 35, 34);
+  font-family: ui-rounded;
+  transition: color 0.5s ease;
+}
+nav a:hover {
+  color: rgb(220, 139, 81);
+}
+.background::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: -2;
+  background: url("https://www.pexels.com/video/blurry-screen-853919/")
+    no-repeat center center/cover;
+  opacity: 0.6;
+}
+.btn-sm {
+  color: rgb(78, 74, 80);
+  background: none;
+  border: 2px solid rgb(78, 74, 80);
+  cursor: pointer;
+  border-radius: 0.2rem;
+  width: 8rem;
+  display: block;
+  margin: auto;
+  transition: all 0.2s ease-in;
+}
+.btn-sm:hover {
+  color: rgb(255, 151, 151);
+  background: none;
+  border: 2px solid rgb(255, 151, 151);
+  cursor: pointer;
+  border-radius: 0.2rem;
+  width: 8rem;
+}
+.paras {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 7rem;
+}
+/* Utility Classes */
+.ex-lg {
+  font-size: 7rem;
+}
+.p-x {
+  padding: 0px 2rem;
+}
+.p-y {
+  padding: 2rem 0px;
+}
+.lg {
+  font-size: 6rem;
+}
+.me {
+  font-size: 5rem;
+}
+.sm {
+  font-size: 4rem;
+}
+.ex-sm {
+  font-size: 3rem;
+}
+.ex-smsm {
+  font-size: 2rem;
+}

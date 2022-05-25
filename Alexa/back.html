@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <link rel="stylesheet" href="Utility.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #255255;
+
+        }
+
+        button {
+            display: block;
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Background Color : <span id="background">rgb</span>
+        </h1>
+        <img width="500">
+        <button class="btn-big" onclick="Color()">Change Bg rgb Color</button>
+        <button class="btn-big" onclick="Hex()">Change Bg Hex Color</button>
+    </div>
+</body>
+<script>
+    let btn = document.getElementsByClassName('btn-big')
+    let background = document.getElementById('background')
+   
+    Color = () => {
+        let Color = `rgb(${Math.round(250 * Math.random())},${Math.round(250 * Math.random())},${Math.round(250 * Math.random())})`
+        document.body.style.backgroundColor = Color;
+        background.innerHTML = Color;
+
+    };
+    Hex = () => {
+        let ColorHex = `#${Math.round(9 * Math.random())
+            }${Math.round(9 * Math.random())}${Math.round(9 * Math.random())}${Math.round(9 * Math.random())}${Math.round(9 * Math.random())}${Math.round(9 * Math.random())}`
+        document.body.style.backgroundColor = ColorHex;
+        background.innerHTML = ColorHex;
+    }
+</script>
+
+</html>

@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  padding: 0.5rem -4rem;
+  min-height: 100vh;
+  /* width: ; */
+  padding: 1rem 3rem;
+  /* margin: auto; */
+  background: rgb(0, 0, 0, 0.5);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: url("../uni.jpg") no-repeat center center/cover;
+  z-index: -1;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo img {
+  width: 5rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 2rem 0.1rem;
+}
+
+nav li {
+  padding: 0.3rem 2rem;
+}
+
+.navlinks {
+  color: #dbd4db;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navlinks::after {
+  content: "";
+  background-color: rgb(213, 99, 116);
+  width: 0%;
+  height: 0.2rem;
+  /* position: relative; */
+  display: block;
+  transition: 0.4s;
+  margin: auto;
+}
+
+.navlinks:hover::after {
+  width: 100%;
+}
+.Slogan {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 15rem auto;
+  width: 80%;
+  min-height: 4vh;
+  color: rgb(124, 29, 68);
+}
+
+.sp-btn {
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  color: #434343;
+  font-size: 20px;
+  display: block;
+  width: 140px;
+  margin: 2rem auto;
+  text-align: center;
+  transition: all 0.8s;
+  border-radius: 0.3rem;
+  border: 2px solid white;
+}
+
+.sp-btn:hover {
+  background: linear-gradient(45deg, rgba(124, 29, 69, 0.808), rgb(255, 0, 0));
+
+  border-color: #434343;
+  color: rgb(255, 255, 255);
+}
+
+.Slogan h1 {
+  font-size: 4rem;
+}
+
+.Slogan h2 {
+  font-size: 3rem;
+}
+.Slogan p {
+  font-size: 2rem;
+}
+#programmes {
+  width: 80%;
+  padding: 2rem 0.2rem;
+  margin: 7rem auto;
+  text-align: center;
+}
+
+#programmes h1 {
+  font-size: 3rem;
+  margin: 2rem 0rem;
+}
+
+#programmes h2 {
+  font-size: 2rem;
+  margin: 2rem 0rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.programmes-col {
+  flex-basis: 30%;
+  padding: 2rem 2rem;
+  margin: 2rem 2rem;
+  background-color: rgba(253, 236, 238, 0.471);
+  border-radius: 0.6rem;
+}
+.programmes-col:hover {
+  box-shadow: 0px 0px 25px 0px rgba(209, 151, 157, 0.671);
+  transition: all 0.5s;
+}
+@media screen and (max-width: 750px) {
+  .row {
+    flex-direction: column;
+  }
+  html {
+    font-size: 5px;
+  }
+  ul {
+    flex-direction: column;
+  }
+  .programmes-col {
+    flex-basis: 100%;
+  }
+  #nav {
+    background: rgb(43 38 38 / 94%);
+    position: fixed;
+    top: 0;
+    /* right: -230px; */
+    text-align: left;
+    height: 100vh;
+    width: 200px;
+    z-index: 2;
+
+    padding: 3rem;
+    transition: all 0.8s;
+  }
+  .burg {
+    display: block;
+  }
+  .Slogan {
+    margin: 40rem auto;
+  }
+}
+.burg img {
+  width: 5.5rem;
+  cursor: pointer;
+}
+
+.burg {
+  display: none;
+  background-color: black;
+  width: 6rem;
+  /* position: fixed; */
+
+  height: 5rem;
+  z-index: 15;
+  padding: 2rem 1rem 2rem 1.5rem;
+  border-radius: 1rem;
+}
+.line {
+  width: 4rem;
+  height: 0.7rem;
+  border-radius: 0.2rem;
+  /* display: none; */
+  margin: 0.5rem;
+  background-color: rgb(0, 0, 0);
+}
+#degrees {
+  width: 80%;
+  padding: 0.2rem 2rem;
+  margin: 7rem auto;
+  text-align: center;
+}
+
+#degrees h1 {
+  font-size: 3rem;
+  margin: 2rem 0rem;
+}
+#degrees h2 {
+  font-size: 2rem;
+  margin: 2rem 0rem;
+}
+
+.degrees-col {
+  flex-basis: 35%;
+  padding: 2rem 2rem;
+  margin: 2rem 2rem;
+  background-color: rgba(226, 112, 125, 0.271);
+  border-radius: 0.6rem;
+}
+.degrees-col:hover {
+  box-shadow: 0px 0px 25px 0px rgba(216, 86, 101, 0.471);
+  transition: all 0.5s;
+}
+#facility {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+#facility h1 {
+  font-size: 3rem;
+  margin: 2rem 0rem;
+}
+
+#facility h2 {
+  font-size: 2rem;
+  margin: 2rem 0rem;
+}
+
+.facility-col {
+  flex-basis: 30%;
+  padding: 2rem 2rem;
+  margin: 2rem 2rem;
+  background-color: bisque;
+}
+.facility-col:hover {
+  box-shadow: 0px 0px 25px 0px rgba(255, 205, 144, 0.952);
+  transition: all 0.5s;
+}
+
+#campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+#campus h1 {
+  font-size: 3rem;
+  margin: 2rem 0rem;
+}
+
+.campus-col {
+  flex-basis: 32%;
+  /* margin: 2rem 2rem; */
+  border-radius: 0.8rem;
+  position: relative;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.campus-col img {
+  width: 100%;
+}
+.center {
+  text-align: center;
+}
+
+.layer {
+  color: transparent;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+.layer:hover {
+  color: white;
+  background: rgba(226, 0, 0, 0.5);
+  height: 100%;
+}

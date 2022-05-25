@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: rgb(37, 36, 36);
+}
+
+body {
+  background-color: #0000001e;
+}
+#header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 20rem;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 0 0.1rem black;
+}
+.logo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  line-height: 1rem;
+  letter-spacing: 0.1rem;
+}
+#header .search input {
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0.4rem 1rem;
+  border: none;
+  background: #00000012;
+  font-size: 1rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 0 0 0 10rem;
+}
+
+#navigation {
+  align-items: center;
+  display: flex;
+}
+#navigation a img {
+  width: 2.5rem;
+}
+.profile-img {
+  border-radius: 50%;
+  width: 2rem !important;
+  margin-left: 1rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.main-container {
+  flex-basis: 40%;
+}
+.aside {
+  background-color: #fff;
+  flex-basis: 20%;
+  min-height: 80vh;
+}
+.head img {
+  width: 3rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+  border: 3px solid rgb(222 82 167);
+}
+.head {
+  background: #fff;
+}
+.user-name {
+  display: flex;
+  padding: 0.5rem;
+}
+.post {
+  background: #fff;
+  margin: 1rem 0;
+}
+.profile-name {
+  display: flex;
+}
+.seemore img {
+  filter: invert(100%);
+}
+.profile-name img {
+  width: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid rgb(222 82 167);
+}
+.jc {
+  justify-content: space-between;
+}
+.ai {
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.point{
+    cursor: pointer;
+}
+.post-img {
+  width: 100%;
+  padding: 0;
+}
+.likcom img {
+  width: 1.5rem;
+  margin: 1rem 0.5rem;
+}
+.likcom {
+  display: flex;
+}
+.likcom img:hover {
+  cursor: pointer;
+  filter: invert(100%);
+  width: 1.5rem;
+  margin: 1rem 0.5rem;
+}
+.comments {
+  padding: 1rem;
+  padding: 1rem;
+  line-height: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.comments img {
+  cursor: pointer;
+}
+.comment-box input {
+  width: 95%;
+  margin: 1rem auto;
+  display: block;
+  outline: none;
+  border-radius: 0.3rem;
+  padding: 0.7rem 1rem;
+  border: none;
+  background-color: #00000012;
+  font-size: 1rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}

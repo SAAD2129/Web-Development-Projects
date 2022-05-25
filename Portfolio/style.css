@@ -1,0 +1,158 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	color: #fff;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-color: #272626;
+}
+.main-c {
+	color: cadetblue;
+}
+.container {
+	width: 100%;
+	min-height: 100vh;
+}
+#header {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem 10%;
+	align-items: center;
+	background-color: rgb(30, 28, 28);
+}
+.logo a {
+	color: #000;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+#navBar a {
+	color: cadetblue;
+	font-size: 1.2rem;
+	font-weight: bold;
+	display: inline-block;
+	position: relative;
+	padding: 0.3rem 0.8rem;
+	text-align: center;
+	display: block;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	margin: auto;
+}
+
+#navBar a:hover {
+	color: rgb(36, 35, 35);
+	transition: all 0.3s ease;
+	border-radius: 0.3rem;
+	background-color: cadetblue;
+}
+#Intro {
+	width: 80%;
+	padding: 2rem;
+	background-color: #2b2a2a;
+	/* height: 40vh; */
+	margin: 5rem auto;
+	display: flex;
+	align-items: center;
+}
+.Pic img {
+	display: block;
+	margin: auto;
+	width: 50%;
+}
+.Info {
+	flex-basis: 49%;
+}
+.Info h1 {
+	position: relative;
+	display: inline;
+}
+.Info h1::after {
+	content: "";
+	background-color: cadetblue;
+	display: block;
+	position: absolute;
+	height: 0.2rem;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	margin: auto;
+}
+.Info p {
+	font-size: 1.3rem;
+}
+.Name {
+	font-size: 3rem;
+}
+
+#About {
+	min-height: 90vh;
+	padding: 1% 10%;
+}
+.paras {
+	line-height: 2rem;
+	font-size: 1.3rem;
+	padding: 1rem;
+}
+/* .paras:hover {
+  transition: all 0.4s ease;
+  transform: translateY(-0.5rem);
+  box-shadow: 2px 3px 3px #191818;
+} */
+#About .about {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-basis: 49%;
+}
+.pics img {
+	width: 50%;
+	display: block;
+	margin: auto;
+}
+#Services {
+	min-height: 100vh;
+	padding: 5%;
+}
+.row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 3rem;
+}
+.col {
+	background-color: #2b2a2a;
+	padding: 2rem 1rem;
+	line-height: 1.8rem;
+	text-align-last: center;
+	font-size: 1.2rem;
+}
+/* 
+Education  SECTION*/
+#Education {
+	min-height: 100vh;
+	padding: 5%;
+}
+.lg-btn {
+	/* width: 15rem; */
+	width: max-content;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	color: #fff;
+	font-size: 1.5rem;
+	background-color: cadetblue;
+	border: none;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	padding: 0.8rem;
+	display: block;
+	margin: 1rem auto;
+	cursor: pointer;
+	/* width: 2rem; */
+}
+.lg-btn:hover .container {
+	transition: all 0.3s ease;
+}
