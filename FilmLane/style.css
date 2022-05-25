@@ -32,7 +32,7 @@ html {
 }
 #header::before {
 	content: "";
-	background: url("images/hero-bg.jpg") no-repeat center center/cover;
+	background: url("../IMAGES/imgFilm/hero-bg.jpg") no-repeat center center/cover;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -149,7 +149,7 @@ option {
 #upcoming-movies {
 	padding: 4rem 5rem;
 	min-height: 100vh;
-	background: url("images/upcoming-bg.png") no-repeat center center/cover;
+	background: url("../IMAGES/imgFilm/upcoming-bg.png") no-repeat center center/cover;
 }
 .head {
 	display: flex;
@@ -193,7 +193,7 @@ option {
 
 #OurServices {
 	min-height: 100vh;
-	background: url("images/service-bg.jpg") no-repeat center center/cover;
+	background: url("../IMAGES/imgFilm/service-bg.jpg") no-repeat center center/cover;
 }
 .services h4 {
 	position: relative;
@@ -255,13 +255,13 @@ option {
 }
 #Top-rated {
 	min-height: 100vh;
-	background: url("images/top-rated-bg.jpg") no-repeat center center/cover;
+	background: url("../IMAGES/imgFilm/top-rated-bg.jpg") no-repeat center center/cover;
 }
 .n-btn {
 	background-color: rgba(0, 0, 0, 0.74);
 	color: #fff;
 	border: none;
-	font-size: 1.3rem;
+	font-size: 1rem;
 	cursor: pointer;
 	padding: 0.6rem 1rem;
 	border-radius: 0.3rem;
@@ -276,7 +276,7 @@ option {
 }
 #best-tvshows {
 	min-height: 100vh;
-	background: url("images/tv-series-bg.jpg");
+	background: url("../IMAGES/imgFilm/tv-series-bg.jpg");
 }
 @media screen and (max-width: 1200px) {
 	html {
@@ -301,7 +301,7 @@ option {
 	/* min-height: 100vh; */
 }
 .Trial {
-	background: url(images/cta-bg.jpg);
+	background: url(../IMAGES/imgFilm/cta-bg.jpg);
 	height: 18rem;
 	margin: auto;
 	display: flex;
@@ -356,7 +356,7 @@ option {
 }
 .footer-links {
 	height: 17rem;
-	background: url("images/footer-bg.jpg");
+	background: url("../IMAGES/imgFilm/footer-bg.jpg");
 }
 @media screen and (max-width: 1090px) {
 	#navigation {

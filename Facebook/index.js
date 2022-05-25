@@ -1,7 +1,7 @@
 // let lower = document.querySelector(".lower");
-let btn = document.getElementById("btn");
+let btn = document.querySelector(".btn");
 
 btn.onclick = () => {
 //   btn.classList.toggle("mar");
-  btn.style.dispaly = "none";
+  btn.style.display = "none";
 };

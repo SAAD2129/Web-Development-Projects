@@ -1,8 +1,6 @@
 let closeBtn = document.querySelector(".closeBtn");
 let navigation = document.querySelector(".navigation");
 let menuBtn = document.querySelector(".menuBtn");
-let cars = Array.from(document.querySelectorAll(".car"));
-let Caro = document.querySelector(".Caro");
 
 // closeBtn.onclick = () => {
 // 	menuBtn.style.display = "block";
@@ -19,19 +17,7 @@ menuBtn.onclick = () => {
 	// menuBtn.style.display = "none";
 	// navigation.style.height = "0";
 };
-let index = 0;
-let carsLength = cars.length;
-setInterval(() => {
-	index++;
-	cars.forEach((cars) => {
-		if (index > carsLength - 1) {
-			index = 0;
-			cars.style.transform = `translateX(${index * -100}%)`;
-		} else {
-			cars.style.transform = `translateX(${index * -100}%)`;
-		}
-	});
-}, 1500);
+
 let n;
 let sendBtn = document.querySelector(".send");
 let modal = document.querySelector(".modal");

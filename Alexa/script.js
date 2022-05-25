@@ -33,66 +33,69 @@ let work = document.querySelector(".work");
 let Education = document.querySelector(".Education");
 let Work = document.querySelector(".Work");
 work.addEventListener("click", () => {
-  Education.style.display = "none";
-  Work.style.display = "flex";
+	// console.log("hey");
+	// console.log(Work);
+	Education.style.display = "none";
+	Work.style.display = "flex";
 });
 edu.addEventListener("click", () => {
-  Education.style.display = "flex";
-  Work.style.display = "none";
+	console.log("hey");
+	Education.style.display = "flex";
+	Work.style.display = "none";
 });
 let showmodals = Array.from(document.querySelectorAll(".showmodal"));
 let modals = Array.from(document.querySelectorAll(".modal-container"));
 let closes = document.querySelectorAll(".close");
 
 showmodals.forEach((showmodal) => {
-  showmodal.addEventListener("click", () => {
-    modals.forEach((modal) => {
-      modal.style.display = "flex";
-    });
-  });
+	showmodal.addEventListener("click", () => {
+		modals.forEach((modal) => {
+			modal.style.display = "flex";
+		});
+	});
 });
 // showmodal.addEventListener("click", () => {
 //   modal.style.display = "flex";
 // });
 modals.forEach((modal) => {
-  closes.forEach((close) => {
-    close.addEventListener("click", () => {
-      modal.style.display = "none";
-    });
-  });
+	closes.forEach((close) => {
+		close.addEventListener("click", () => {
+			modal.style.display = "none";
+		});
+	});
 });
 let pfolios = Array.from(document.querySelectorAll(".pfolio"));
 let length = pfolios.length;
 let index = 0;
 
 Carousal = () => {
-  // console.log("hey");
-  // console.log(index);
-  index++;
-  pfolios.forEach((pfolio) => {
-    if (index > length - 1) {
-      index = 0;
-      pfolio.style.transform = `translateX(${index * -100}%)`;
-    } else {
-      // console.log('hey');
-      pfolio.style.transform = `translateX(-${index * 100}%)`;
-    }
-  });
+	// console.log("hey");
+	// console.log(index);
+	index++;
+	pfolios.forEach((pfolio) => {
+		if (index > length - 1) {
+			index = 0;
+			pfolio.style.transform = `translateX(${index * -100}%)`;
+		} else {
+			// console.log('hey');
+			pfolio.style.transform = `translateX(-${index * 100}%)`;
+		}
+	});
 };
 setInterval(Carousal, 4000);
 
 let Mode = document.querySelector(".Mode");
 Mode.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
+	document.body.classList.toggle("dark");
 });
 let nav = document.getElementById("navigation");
 let Menu = document.querySelector(".menubar");
 Menu.onclick = () => {
-  if (nav.style.top == "4rem") {
-    nav.style.top = "-15rem";
-  } else {
-    nav.style.top = "4rem";
-  }
+	if (nav.style.top == "4rem") {
+		nav.style.top = "-15rem";
+	} else {
+		nav.style.top = "4rem";
+	}
 };
 let skillPerfront = document.querySelector(".skillPerfront");
 let skillPerback = document.querySelector(".skillPerback");
@@ -100,16 +103,16 @@ let frontend = document.querySelector(".frontend");
 let backend = document.querySelector(".backend");
 
 frontend.addEventListener("click", () => {
-  if ((skillPerfront.style.display == "block")) {
-    skillPerfront.style.display = "none";
-  } else {
-    skillPerfront.style.display = "block";
-  }
+	if (skillPerfront.style.display == "block") {
+		skillPerfront.style.display = "none";
+	} else {
+		skillPerfront.style.display = "block";
+	}
 });
 backend.addEventListener("click", () => {
-  if ((skillPerback.style.display == "block")) {
-    skillPerback.style.display = "none";
-  } else {
-    skillPerback.style.display = "block";
-  }
+	if (skillPerback.style.display == "block") {
+		skillPerback.style.display = "none";
+	} else {
+		skillPerback.style.display = "block";
+	}
 });

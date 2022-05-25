@@ -9,16 +9,7 @@
   /* font-family: "Roboto", sans-serif; */
 }
 
-:root {
-  --main-color: #32afad;
-  --main2-color: #2adabc;
-  --hover-color: #2c7776;
-  --font-color: #fff;
-  --font2-color: #585b5b;
-  --trans-03: transition: all 0.3s ease-in;
-  --trans-05: transition: all 0.5s ease;
-  --trans-02: transition: all 1s ease-in;
-}
+
 /*  === === === === === ==> ALL COLOR PROPERTIES STARTS HERE */
 
 .main-color {

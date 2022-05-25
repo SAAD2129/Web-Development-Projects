@@ -32,7 +32,8 @@
 
 /*  === === === === === ==> ALL BACKGROUND COLOR PROPERTIES STARTS HERE */
 .bg-white {
-  background-color: #fff;
+  background-color: #fff!important;
+  color: #000!important;
 }
 .bg-color {
   background-color: var(--main-color);
@@ -286,7 +287,7 @@
 }
 
 .block {
-  display: block;
+  display: block!important;
 }
 .m-auto {
   margin: 2rem auto !important;
@@ -314,6 +315,9 @@
 }
 .inline {
   display: inline !important;
+}
+.inline-b {
+  display: inline-block !important;
 }
 .p-0 {
   padding: 0;

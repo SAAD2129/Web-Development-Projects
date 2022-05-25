@@ -27,7 +27,7 @@ header {
 	color: var(--main-color);
 }
 #home {
-	background: url("images/back.jpg") no-repeat center center/cover;
+	background: url("/IMAGES/EccomImages/back.jpg") no-repeat center center/cover;
 	height: 90vh;
 	min-height: 40vh;
 	display: flex;
@@ -88,15 +88,18 @@ header {
 	margin-top: 3rem;
 }
 .new .col:first-child {
-	background: url("images/new/1.jpg") no-repeat center center/cover;
+	background: url("/IMAGES/EccomImages/new/1.jpg") no-repeat center center/cover;
+	border-radius: 0.8rem;
 }
 .new .col:nth-child(2) {
-	background: url("images/new/5.jpg") no-repeat center center/cover;
+	background: url("/IMAGES/EccomImages/new/5.jpg") no-repeat center center/cover;
 	text-align: center;
+	border-radius: 0.8rem;
 }
 .new .col:last-child {
-	background: url("images/new/3.jpg") no-repeat center center/cover;
+	background: url("/IMAGES/EccomImages/new/3.jpg") no-repeat center center/cover;
 	text-align: right;
+	border-radius: 0.8rem;
 }
 .layer {
 	background: linear-gradient(180deg, rgba(245, 186, 196, 0.01), rgba(245, 186, 196, 0.859));
@@ -106,6 +109,7 @@ header {
 	bottom: 0;
 	transition: all 0.2s ease-in-out;
 	z-index: -1;
+	border-radius: 0.8rem;
 }
 .new .col:hover .layer {
 	height: 100%;
@@ -139,7 +143,7 @@ header {
 
 #mainimg::before {
 	width: 100%;
-	background: url("images/banner/2.jpg") no-repeat center center/cover;
+	background: url("/IMAGES/EccomImages/banner/2.jpg") no-repeat center center/cover;
 	height: 70%;
 	position: absolute;
 	z-index: -3;

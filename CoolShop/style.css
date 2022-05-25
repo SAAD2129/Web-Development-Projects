@@ -9,7 +9,16 @@
   /* font-family: "Poppins", sans-serif; */
   font-family: "Roboto", sans-serif;
 }
-
+:root {
+  --main-color: rgb(201, 39, 71);
+  --main2-color: #;
+  --hover-color: rgb(124, 22, 42);
+  --font-color: #fff;
+  --font2-color: #585b5b;
+  --trans-03: transition: all 0.3s ease-in;
+  --trans-05: transition: all 0.5s ease;
+  --trans-02: transition: all 1s ease-in;
+}
 .Modal {
   width: 50vw;
   background-color: #fff;
@@ -146,7 +155,7 @@ nav ul .imgs {
   display: none;
 }
 .container {
-  background: url("images/bg.jpg") no-repeat center center/cover;
+  background: url("/IMAGES/imgCool/bg.jpg") no-repeat center center/cover;
   min-height: 85vh;
   padding: 2% 10%;
 }
@@ -174,13 +183,13 @@ nav ul .imgs {
   border-radius: 0.3rem;
 }
 .men {
-  background: url("images/category-1.jpg") no-repeat center center/cover;
+  background: url("/IMAGES/imgCool/category-1.jpg") no-repeat center center/cover;
 }
 .women {
-  background: url("images/product-17.jpg") no-repeat center center/cover;
+  background: url("/IMAGES/imgCool/product-17.jpg") no-repeat center center/cover;
 }
 .accesory {
-  background: url("images/accesory.jpg") no-repeat center center/cover;
+  background: url("/IMAGES/imgCool/accesory.jpg") no-repeat center center/cover;
 }
 .colMain a {
   background: #fff;

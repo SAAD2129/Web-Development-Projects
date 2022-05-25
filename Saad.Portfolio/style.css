@@ -35,9 +35,6 @@ header {
 html {
 	scroll-behavior: smooth;
 }
-body {
-	/* background: #fff; */
-}
 html::-webkit-scrollbar-thumb {
 	color: #000;
 	background-color: #000;
@@ -79,7 +76,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 #home {
-	margin-top: 8%;
+	/* margin-top: 8%; */
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -93,7 +90,7 @@ section #home {
 }
 #home::before {
 	content: "";
-	background: url("../dev.jpg") no-repeat center center/cover;
+	background: url("dev.jpg") no-repeat center center/cover;
 	width: 100%;
 	height: 100%;
 	z-index: -5;
@@ -178,20 +175,16 @@ section #home {
 	height: 0.3rem;
 	z-index: 5;
 }
-.Caro {
-	position: relative;
-	height: max-content;
-}
+
 .Caro-Container {
-	display: flex;
-	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
-	border-top-right-radius: 5rem;
-	border-bottom-right-radius: 5rem;
+	display: grid;
 	margin-top: 5rem;
-	width: 60vw;
+	border: 1px solid black;
 	margin: auto;
-	overflow: hidden;
+	gap: 1.5rem;
+	padding: 6%;
 	position: relative;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .Angle {
 	position: absolute;
@@ -206,32 +199,50 @@ section #home {
 	right: 0.5rem;
 }
 .modeBtn {
-cursor: pointer;	
+	cursor: pointer;
 }
 .car {
-	transition: all 0.4s ease-in;
-	width: 60vw;
 	text-align: center;
-	padding: 1rem;
 	color: #555;
 	font-size: 1.3rem;
+	box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+	margin: .5rem 0;
 	/* border: 2px solid black; */
 }
-.car img {
-	width: 15rem;
-	display: block;
-	margin: 2rem auto;
-	height: 8rem;
+.car img:hover{
+	transform: scale(1.03);
+	transition: all .5s ease-in;
 }
-.car a h2 {
-	color: var(--hover-color);
+/* .layer {
+	background: linear-gradient(180deg, rgba(245, 186, 196, 0.01), rgba(245, 186, 196, 0.859));
+	width: 100%;
+	height: 0%;
+	position: absolute;
+	bottom: 0;
+	transition: all 0.2s ease-in-out;
+	z-index: 15;
+	border-radius: 0.8rem;
+}
+.car:hover .layer {
+	height: 100%;
+} */
+.car a {
+	color: var(--main-color);
+}
+.car img {
+	width: 100%;
+	height: 23rem;
+}
+a h3 {
+	color: var(--main-color);
 	text-align: center;
 	margin-bottom: 1rem;
 }
-.car a h2:hover {
-	color: var(--main-color);
+a h3:hover {
+	color: var(--hover-color);
 	transition: all 0.2s ease-in;
 }
+
 .head {
 	position: relative;
 }
@@ -263,11 +274,12 @@ section {
 .skillbg {
 	width: 100%;
 	background-color: rgba(164, 164, 25, 0.333);
-	height: 1rem;
+	height: 1.2rem;
 	display: flex;
 	align-items: center;
-	padding: 0 0.1rem;
+	padding: 0.3rem;
 	border-radius: 5rem;
+	box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
 }
 .skillpercentage {
 	border-radius: 5rem;
@@ -275,18 +287,16 @@ section {
 	position: relative;
 	width: 60%;
 	display: inline-block;
-	background-color: var(--main-color);
+
+	background: linear-gradient(45deg, rgb(87, 154, 230), rgba(87, 124, 167, 0.91));
 }
 .css {
-	background-color: rgb(97, 168, 250);
 	width: 65%;
 }
 .html {
 	width: 85%;
-	background-color: rgb(231, 102, 33);
 }
 .js {
-	background-color: rgb(200, 200, 29);
 	width: 35%;
 }
 
@@ -330,8 +340,8 @@ section {
 	display: inline;
 	transform: translateY(-15px);
 }
-#Contact {
-	/* background-color: #fff; */
+#Contact .box {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 .mainContaint {
 	display: flex;
