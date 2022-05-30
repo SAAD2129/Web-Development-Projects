@@ -5,6 +5,6 @@
 	"editor.cursorSurroundingLines": 62,
 	"editor.wordWrapColumn": 250,
 	"editor.wordWrap": "on",
-	"workbench.colorTheme": "Material Theme",
+	"workbench.colorTheme": "Material Theme Darker",
 	"git.ignoreLimitWarning": true
 }

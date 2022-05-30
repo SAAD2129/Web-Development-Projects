@@ -3,5 +3,10 @@ error.log
 /icons
 /MUSICMAIN
 /IMAGES
-/Instagram/icons
 *.svg
+*.png
+*.jpeg
+*.jpg
+Poster/
+Saad.Portfolio/assets
+Saad.Portfolio/favicon

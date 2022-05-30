@@ -13,9 +13,9 @@ html{
 }
 
 :root {
-  --main-color:#c99f22;
+  --main-color:rgb(244, 64, 100);
   --bg-color: #2a2a2a;
-  --hover-color: #957d35;
+  --hover-color: rgb(180, 41, 69);
   --font-color: #fff;
   --font2-color: #585b5b;
   --trans-03: transition: all 0.3s ease-in;
@@ -25,7 +25,7 @@ html{
 /*  === === === === === ==> ALL COLOR PROPERTIES STARTS HERE */
 
 .main-color {
-  color: var(--main-color);
+  color: var(--main-color)!important;
 }
 .font-color {
   color: var(--font-color);
@@ -43,6 +43,9 @@ html{
 .color-gray:hover{
   transition: all .2s ease-in;
   color: rgb(8, 8, 8)!important;
+}
+.filter-gray{
+  filter: grayscale(1);
 }
 .box-s{
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);
@@ -144,6 +147,12 @@ color: #000!important;
 }
 .space-between {
   justify-content: space-between;
+}
+.space-around {
+  justify-content: space-around;
+}
+.space-evenly {
+  justify-content: space-evenly;
 }
 .min-width-100 {
   min-width: 100vw;
@@ -484,6 +493,42 @@ padding: 1rem 5rem !important;
 .pb-5 {
   padding-bottom: 5rem  !important;
 }
+.gap-min {
+	gap: 0.5rem;
+}
+.gap-1 {
+	gap: 1rem;
+}
+.gap-2 {
+	gap: 2rem;
+}
+.gap-11 {
+	gap: 11rem;
+}
+.gap-3 {
+	gap: 3rem;
+}
+.gap-4 {
+	gap: 4rem;
+}
+.gap-5 {
+	gap: 5rem;
+}
+.gap-6 {
+	gap: 6rem;
+}
+.gap-7 {
+	gap: 7rem;
+}
+.gap-8 {
+	gap: 8rem;
+}
+.gap-9 {
+	gap: 9rem;
+}
+.gap-10 {
+	gap: 10rem;
+}
 .center {
   text-align: center !important;
 }
@@ -550,7 +595,7 @@ padding: 1rem 5rem !important;
   margin: 0 !important;
 }
 .inline {
-  display: inline !important;
+  display: inline!important;
 }
 .p-0 {
   padding: 0;
