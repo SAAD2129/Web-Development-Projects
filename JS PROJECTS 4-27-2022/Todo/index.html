@@ -6,16 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Modal Window</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="../Utility.css" />
 	</head>
 
 	<body>
-		<div class="Box-container">
-			<div class="Modal">
-				<h1 id="Close">&times;</h1>
-				<h3>Sorry The Items are Out of Stock Try Next Time</h3>
+		<div class="container">
+			<div class="todo flex">
+				<input id="todo-inp" type="text" />
+				<a href="#todo-inp"><img src="../icons/plus.svg" class="add" width="25" /></a>
+				<img  src="../icons/check.svg" width="35" class="done pointer" />
 			</div>
-			<div class="btn">
-				<button class="btn">Pop Up</button>
+			<div class="todo-container">
+				<div class="todo-item">
+					<p>this is the task</p>
+				</div>
 			</div>
 		</div>
 	</body>

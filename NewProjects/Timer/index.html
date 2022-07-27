@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>StopWatch</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="Utility.css" />
+		<script defer src="main.js"></script>
+		<style>
+			.container {
+				background-color: #fff;
+				width: 600px;
+				height: 300px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+			}
+			.timer {
+				font-size: 8rem;
+				font-weight: bold;
+			}
+			body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+				background-color: rgb(160, 247, 234);
+			}
+			button {
+				background-color: transparent;
+				border: none;
+				cursor: pointer;
+				margin: 0 1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="timer">
+                <span class="m"></span>
+                :<span class="s"></span>
+                :<span class="ms"></span>
+            </div>
+			<div class="buts">
+				<button class="start"><img src="../icons/pause.svg" width="25" alt="" /></button>
+				<button class="reset"><img src="../icons/play.svg" width="25" alt="" /></button>
+			</div>
+		</div>
+	</body>
+</html>

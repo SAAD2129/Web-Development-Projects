@@ -1,0 +1,22 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.container {
+    /* border: .1rem solid black; */
+    padding: 2rem;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+	width: 50%;
+}
+.img-user {
+	width: 7rem;
+	height: 7rem;
+	display: block;
+	margin: auto;
+	border-radius: 50%;
+}
+*{
+    transition: all .3s ease-in;
+}

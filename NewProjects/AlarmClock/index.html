@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Alarm Clock</title>
+		<link rel="stylesheet" href="Utility.css" />
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="main.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="alarmMain center">
+				<!-- <img src="alm.jpg" alt="" /> -->
+				<div class="center my-1"><h1 id="Time">04:28:34s</h1></div>
+                <div class="Selcetion">
+
+                    <select >
+                        <option value="Hours" selected hidden>Hours</option>
+                    </select>
+                    <select >
+                        <option value="Minutes" selected hidden>Minutes</option>
+                    </select>
+                    <select>
+                        <option value="AM/PM" selected hidden>AM/PM</option>
+                    </select>
+                </div>
+                <div class="my-2">
+                    <button class="btn m-auto setAlarm big">SET ALARM</button>
+                </div>
+                
+            </div>
+		</div>
+        <div class="popup">
+            <div class="text">
+            </div>
+            <button class="butn close"></button>
+        </div>
+	</body>
+</html>

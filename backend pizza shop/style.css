@@ -7,7 +7,7 @@ header {
 }
 .carcontMaine {
 	height: 80vh;
-	background: url("/IMAGES/imgBackendPizza/home-bg.jpg") no-repeat center center/cover;
+	background: url("/PROJECTS/IMAGES/imgBackendPizza/home-bg.jpg") no-repeat center center/cover;
 	width: 100%;
 	padding: 2% 6%;
 	display: flex;

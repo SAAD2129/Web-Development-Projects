@@ -1,11 +1,10 @@
-let heads = document.querySelectorAll(".head");
-let pHiders = document.querySelectorAll(".p-hider");
-
-heads.forEach((head) => {
-  head.addEventListener("click", () => {
-    heads.forEach((head) => {
-      head.classList.toggle("hide");
-    });
-    head.nextElementSibling.classList.toggle("hide");
-  });
+let Hiders = document.querySelectorAll(".hider");
+let paras = document.querySelectorAll(".para");
+Hiders.forEach((Hider) => {
+	Hider.addEventListener("click", () => {
+		paras.forEach((paras) => {
+			paras.style.display = "none";
+		});
+		Hider.nextElementSibling.style.display = "block";
+	});
 });

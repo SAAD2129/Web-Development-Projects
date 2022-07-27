@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Guess the Word!</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="Utility.css" />
+		<script defer src="words.js"></script>
+		<script defer src="main.js"></script>
+	</head>
+	<body>
+		<div class="smallContainer">
+			<h2 class="p-1">Guess the Word</h2>
+			<hr />
+			<div class="widht-80 m-auto">
+				<input type="text" class="TypingInput" maxlength="1" />
+			</div>
+			<div class="inputs p-1"></div>
+			<p class="px-1 my-min p-font weight-500">Hint : <span class="hint"></span></p>
+			<p class="px-1 my-min p-font weight-500">Remaining guesses : <span class="guesses"></span></p>
+			<p class="px-1 my-min p-font weight-500">Wrong letters : <span class="wrongLetters"></span></p>
+			<div class="my-1">
+				<button id="ResetBtn" class="m-auto btn big">RESET GAME</button>
+			</div>
+		</div>
+		<div class="popup">Game Over! You don't have any guesses more</div>
+	</body>
+</html>

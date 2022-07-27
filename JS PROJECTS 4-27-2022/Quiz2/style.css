@@ -1,0 +1,35 @@
+.quizcontianer {
+	width: 60%;
+	margin: auto;
+	background-color: #fff;
+	padding: 2rem 3rem;
+}
+body {
+	background-color: #efefef;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+}
+.question {
+	margin: 1rem 0;
+}
+
+.form-control {
+	margin: 0.5rem 0;
+}
+
+.prevBtn {
+	color: rgb(0, 0, 0);
+	font-weight: 900;
+	position: fixed;
+	top: 1rem;
+	font-size: 5rem;
+	font-weight: bolder;
+	display: inline-block;
+	left: 1rem;
+	cursor: pointer;
+}
+.send {
+	display: none;
+}

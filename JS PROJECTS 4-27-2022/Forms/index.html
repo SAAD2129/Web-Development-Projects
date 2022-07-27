@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Payment Form</title>
+        <link rel="stylesheet" href="../Utility.css">
+		<style>
+			.form-container {
+				width: 30%;
+				padding: 1rem;
+				background-color: #fff;
+				margin: auto;
+			}
+			body {
+				display: flex;
+				height: 100vh;
+				align-items: center;
+				background-color: #efefef;
+			}
+			.form-inpt {
+				background-color: #efefef;
+				width: 47%;
+				outline: none;
+				border: none;
+				border-bottom: 0.1rem solid transparent;
+				padding: 1rem;
+				font-weight: 500;
+				font-size: 1.1rem;
+				margin: 0.3rem 0.3rem;
+			}
+			input[type="email"] {
+				width: 100%;
+			}
+
+			.form-inpt:focus {
+				border-bottom: 0.1rem solid gray;
+				transition: all 0.2s ease-in;
+			}
+			form div {
+				width: 100%;
+			}
+			form textarea {
+				resize: none;
+				background-color: #efefef;
+				outline: none;
+				border: none;
+				padding: 1rem;
+				font-weight: 500;
+				font-size: 1.1rem;
+				margin: 0.3rem 0;
+				width: 100%;
+				border: 0.1rem solid transparent;
+			}
+			form textarea:focus {
+				border: 0.1rem solid gray;
+				transition: all 0.2s ease-in;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="form-container">
+			<form action="#">
+				<div>
+					<input type="text" name="lname" id="lname" class="form-inpt" required placeholder="First Name" />
+					<input type="text" name="fname" id="fname" class="form-inpt" required placeholder="Last Name" />
+				</div>
+				<div>
+					<input type="email" name="email" id="email" class="form-inpt" required placeholder="name@example.com" />
+				</div>
+				<div>
+					<textarea name="mess" id="mess" cols="30" rows="10"></textarea>
+				</div>
+                <div>
+                    <button class="btn curve">Continue</button>
+                </div>
+			</form>
+		</div>
+	</body>
+</html>

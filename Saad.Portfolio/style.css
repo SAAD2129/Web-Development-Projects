@@ -79,7 +79,8 @@ body {
 
 .DarkMode .box-edu,
 .DarkMode #Services .col,
-.DarkMode #Contact .box {
+.DarkMode #Contact .box,
+.DarkMode .about {
 	background-color: rgb(10, 12, 16);
 	color: #fff;
 	box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.1);
@@ -407,6 +408,7 @@ section {
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 	transform: translateX(-10px);
 }
+
 .hireme {
 	color: #fff;
 	display: flex;
@@ -435,14 +437,36 @@ section {
 	transform: translateY(-15px);
 }
 .box-edu {
-	width: fit-content;
 	box-shadow: 0 0 20px 0 rgb(244, 64, 100, 0.15);
-	padding: 1rem 1.5rem;
+	padding: 3rem 3rem;
+	text-align: center;
 	background-color: #fff;
 	color: #000;
-	margin: 1.5rem auto;
-	display: block;
+	/* margin: 1.5rem auto; */
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 5rem;
+}
+.box-edu:nth-child(odd) {
+	/* margin: 2rem 0 2rem 12%; */
+	/* background-color: rgb(255, 35, 35); */
+}
+.box-edu:nth-child(even) {
+	/* margin: 2rem 0 2rem 38%; */
+	/* background-color: rgb(255, 35, 35); */
+}
+
+.box-edu:hover {
+	transform: translateY(-15px);
+	transition: all 0.2s linear;
+	cursor: pointer;
+}
+
 #Contact .box {
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 	background-color: #fff;
@@ -496,11 +520,14 @@ footer .SocialHandles {
 	position: static;
 	display: block;
 	margin: auto;
+	transform:none;
 }
 footer .SocialHandles img {
 	margin: 0.5rem;
+	transform:none;
 }
 footer .SocialHandles img:hover {
+	transform:none;
 	transform: translateY(-15px);
 }
 .profile {
@@ -547,9 +574,14 @@ footer .SocialHandles img:hover {
 	padding: 0.5rem;
 	/* opacity: 0; */
 }
+
+/* MEDIA QUERY FOR THE SCREEN  */
 @media screen and (max-width: 800px) {
 	#Services {
 		padding: 5% 3%;
+	}
+	.grid {
+		grid-template-columns: repeat(1, 1fr);
 	}
 	html {
 		font-size: 62%;

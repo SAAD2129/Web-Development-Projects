@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buffering Animation</title>
+    <style>
+        .div{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: transparent;
+            border: .3rem solid rgb(152, 165, 152);
+            border-top: 0;
+            border-left: 0;
+            animation: loader .8s  infinite forwards;
+                transition: all .3s ease-in;
+        }
+        body{
+            display: flex;
+            align-items: center
+            ;
+            min-height: 100vh;
+            justify-content: center;
+        }
+        @keyframes loader {
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(300deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="div">
+
+    </div>
+</body>
+</html>

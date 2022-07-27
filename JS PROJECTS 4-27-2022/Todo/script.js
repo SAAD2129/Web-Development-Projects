@@ -1,17 +1,24 @@
-let Close = document.getElementById("Close");
-let Box = document.querySelector(".Box-container");
-let Modal = document.querySelector(".Modal");
-let btn = document.querySelector(".btn");
+let Add = document.querySelector(".add");
+let doneBtn = document.querySelector(".done");
+let todoContainer = document.querySelector(".todo-container");
+let todoInp = document.querySelector("#todo-inp");
 
-btn.addEventListener("click", () => {
-  Modal.style.display = "block";
-  btn.style.display = "none";
-  Box.style.background = "rgba(0, 0, 0, 0.5)";
-  Modal.style.transition = ":all 0.5s ease;";
+Add.addEventListener("click", () => {
+	todoInp.style.zIndex = "0";
 });
-Close.addEventListener("click", () => {
-  Modal.style.display = "none";
-  Modal.style.transition = ":all 0.5s ease;";
-  btn.style.display = "block";
-  Box.style.background = "rgb(123, 151, 235)";
+let val;
+todoInp.addEventListener("change", (e) => {
+	val = e.target.value;
+});
+doneBtn.addEventListener("click", () => {
+	if (todoInp.value != '') {
+		let Div = document.createElement("div");
+		todoContainer.append(Div);
+		Div.classList.add("todo-item");
+		Div.innerHTML = `<p>${val}</p>`;
+		todoInp.value = "";
+		todoInp.style.zIndex = "-1";
+	}
+
+
 });

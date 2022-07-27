@@ -1,0 +1,425 @@
+.button {
+	flex-basis: 20%;
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+header{
+	position: sticky;
+	top: 0;
+	/* background-color: var(--bg-color); */
+	box-shadow: 0 0 20px 3px var(--bg-color);
+
+}
+
+.outline-txt {
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-color: white;
+	-webkit-text-stroke-width: 2px;
+}
+.logo {
+	padding-left: 5rem;
+}
+
+.navBar li a {
+	font-weight: 600;
+	border: 2px solid var(--main-color);
+	color: white;
+}
+body {
+	background-color: rgb(73, 73, 73);
+}
+.logo img {
+	width: 10rem;
+}
+.navBar{
+	gap: 2rem;
+}
+.slogan {
+	background-color: grey;
+	display: inline-block;
+	padding: 1.5rem;
+	font-weight: bold;
+	position: relative;
+	z-index: -4;
+	color: #fff;
+	border-radius: 5rem;
+}
+.slogan p::before {
+	content: "";
+	background-color: var(--main-color);
+	width: 30%;
+	height: 70%;
+	bottom: 0.6rem;
+	left: 0.3rem;
+	z-index: -5;
+	border-radius: 5rem;
+	position: absolute;
+	animation: move 1.3s ease-in 0s 1;
+}
+.row {
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+@keyframes move {
+	20% {
+		left: 3rem;
+	}
+	40% {
+		left: 6rem;
+	}
+	60% {
+		left: 8rem;
+	}
+	80% {
+		left: 5rem;
+	}
+	100% {
+		left: 0.3rem;
+	}
+}
+#home {
+	margin-top: 2%;
+	padding: 1% 5%;
+	display: flex;
+}
+#home h1 {
+	font-size: 5rem;
+}
+
+.count .number {
+	font-weight: bold;
+	font-size: 2rem;
+}
+.left {
+	flex-basis: 70%;
+}
+.counters {
+	display: flex;
+	text-align: center;
+	gap: 2rem;
+	margin-top: 2rem;
+	line-height: 1.8rem;
+}
+.right {
+	flex-basis: 40%;
+	width: 100%;
+	position: relative;
+}
+.hero img {
+	min-width: 15rem;
+	width: 100%;
+}
+.right::before {
+	content: "";
+	background: url("assets/hero_image_back.png") no-repeat center center;
+	width: 90%;
+	height: 100%;
+	position: absolute;
+	z-index: -352;
+	top: -30%;
+	left: -15rem;
+}
+.hrt {
+	background-color: rgb(62, 60, 60);
+	margin-top: 3rem;
+	margin-right: 0.5rem;
+	padding: 0.5rem;
+	line-height: 1.8rem;
+	width: max-content;
+	border-radius: 0.3rem;
+}
+.cal-det {
+	background-color: var(--bg-color);
+	border-radius: 0.3rem;
+	gap: 1rem;
+	padding: 1rem 2rem;
+}
+
+.col {
+	background-color: var(--bg-color);
+	padding: 2rem;
+}
+.col:hover {
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+	background: linear-gradient(90deg, rgb(233, 157, 15), rgb(215, 172, 91));
+}
+
+.col h3 {
+	margin: 1rem 0;
+}
+.col a {
+	color: #fff;
+	font-weight: 500;
+	display: inline-block;
+	margin-top: 2rem;
+	transition: all 0.2s ease-in;
+}
+.col a:hover {
+	color: rgba(119, 118, 118);
+	font-weight: 500;
+	display: inline-block;
+	filter: invert(60%);
+}
+.img-1 {
+	width: 100%;
+}
+.left-imgs {
+	flex-basis: 50%;
+	gap: 1rem;
+}
+.left-imgs img {
+	width: 100%;
+	min-width: 8rem;
+}
+#choose {
+	padding: 8%;
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+}
+
+.plan-cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+.plan-card {
+	padding: 1.5rem;
+	border-radius: 0.3rem;
+}
+.plan-card a:hover {
+	transition: all 0.3s ease-in;
+	color: rgba(119, 118, 118);
+	filter: invert(60%);
+}
+.prem {
+	padding: 3rem;
+	background: var(--grad-color);
+}
+.basic {
+	height: max-content;
+	background-color: var(--bg-color);
+}
+.pro {
+	height: max-content;
+	background-color: var(--bg-color);
+}
+#testimonials {
+	/* height: 80vh; */
+	padding: 5% 2%;
+	margin: 3% 0;
+	gap: 3rem;
+	align-items: center;
+}
+.right-imgs {
+	flex-basis: 25%;
+}
+
+.navigators {
+	align-self: flex-end;
+	gap: 1rem;
+	display: flex;
+	margin-right: 1rem;
+	margin-bottom: 2rem;
+}
+.navigators img {
+	cursor: pointer;
+}
+.left-tests {
+	flex-basis: 75%;
+	padding: 3%;
+}
+.review-msg {
+	line-height: 2.3rem;
+	width: 70%;
+	letter-spacing: 0.2rem;
+}
+.right-imgs .user-img {
+	position: relative;
+	width: 14rem;
+	/* box-shadow: -1rem -1rem var(--main-color); */
+	border: 0.1rem solid var(--main-color);
+}
+
+.user-imgs {
+	position: relative;
+	width: 14rem;
+	display: flex;
+	overflow: hidden;
+}
+
+.special {
+	position: relative;
+}
+.special::before {
+	content: "";
+	background: var(--grad-color);
+	width: 30%;
+	height: 10%;
+	border-radius: 20%;
+	position: absolute;
+	top: -0.1rem;
+}
+
+.input {
+	background-color: var(--bg-color);
+	padding: 0 1rem;
+}
+.input input {
+	outline: none;
+	border: none;
+	font-size: 1.3rem;
+	cursor: pointer;
+	background-color: transparent;
+}
+footer {
+	border-top: 0.2rem solid white;
+	margin-top: 3rem;
+	padding: 5% 0;
+}
+* {
+	/* border: 1px solid black; */
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 1100px) {
+	html {
+		font-size: 85%;
+	}
+}
+@media screen and (max-width: 900px) {
+	html {
+		font-size: 75%;
+	}
+}
+@media screen and (max-width: 800px) {
+	html {
+		font-size: 60%;
+	}
+
+	.navBar {
+		position: absolute;
+		left: 0;
+		top: -100rem;
+		background: #000;
+		flex-direction: column;
+		width: 100%;
+		gap: 2rem;
+		align-items: self-start;
+		padding: 2rem;
+		padding-top: 3.3rem;
+		z-index: 4343;
+		transition: all 0.5s ease-in-out;
+	}
+	.navBar li {
+		/* border: none; */
+		display: block;
+		width: 100%;
+	}
+	.navBar li a {
+		border: none;
+		display: block;
+		width: 100%;
+	}
+	.navBar li a:hover {
+		background-color: var(--bg-color);
+	}
+	#home h1 {
+		font-size: 4rem;
+	}
+	.menu-btn {
+		display: inline-block!important;
+	}
+}
+@media screen and (max-width: 600px) {
+	.row {
+		padding: 0 0.5rem !important;
+	}
+	.input {
+		padding: 0;
+	}
+
+	.col img {
+		width: 2rem;
+	}
+	.col {
+		padding: 0.3rem;
+		margin: 0 2rem;
+	}
+	.logo {
+		padding: 0;
+	}
+	#home h1 {
+		font-size: 2.5rem;
+	}
+	#testimonials {
+		flex-direction: column;
+	}
+	.plan-cards {
+		gap: 1rem;
+		flex-direction: column;
+	}
+	.plan-card {
+		padding: 1rem;
+	}
+
+	.hero img {
+		min-width: 15rem;
+		width: 61%;
+		display: block;
+		margin: auto;
+	}
+	.plan-card img {
+		width: 2.5rem;
+	}
+	.plan-card p img {
+		width: 1.3rem;
+	}
+	.plan-card .max {
+		width: max-content;
+		margin: auto;
+	}
+	.plan-card .med-font {
+		font-size: 2rem;
+	}
+	.plan-card h2 {
+		font-size: 1.8rem;
+	}
+	footer .med-font {
+		font-size: 1.2rem;
+	}
+	.upfoot {
+		flex-direction: column;
+	}
+	.input {
+		display: flex;
+	}
+	#home {
+		flex-direction: column;
+	}
+	#choose {
+		flex-direction: column;
+		padding: 8% 1%;
+	}
+}
+@media screen and (max-width: 400px) {
+	.counters {
+		flex-direction: column;
+	}
+	.cal-det {
+		width: max-content;
+		align-self: center;
+	}
+}
+.menu-btn {
+	width: 4rem;
+	height: 3rem;
+	padding: 0.5rem;
+	background-color: rgb(94, 91, 91);
+	cursor: pointer;
+	z-index: 352423;
+	margin-bottom: 1.5rem;
+	display: none;
+}

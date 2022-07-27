@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Image Editor</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="../Utility.css" />
+		<script defer src="main.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="main-div">
+				<h2>Easy image Editor</h2>
+				<div class="imgEditor">
+					<div class="left p-2">
+						<h3>Filters</h3>
+						<div class="filters">
+							<div class="filterBtns">
+								<div class="px">
+									<button id="bright" class="filBtn btn active outline">Brightness</button>
+									<button id="satu" class="filBtn btn outline">Saturation</button>
+								</div>
+								<div>
+									<button id="inver" class="filBtn btn outline">Inversion</button>
+									<button id="gray" class="filBtn btn outline">Grayscale</button>
+								</div>
+							</div>
+							<div class="my-1">
+								<label class="flex space-between" for="range"
+									><span class="fill-name"> Brightness</span> <span class="fil-per">100%</span></label
+								>
+								<input type="range" name="range" min="0" max="200" value="100" id="range" />
+							</div>
+						</div>
+
+						<div class="rotate">
+							<h3 class="my-1">Rotate & Flip</h3>
+
+							<div class="positions">
+								<img class="rotate-clock" src="../icons/rotate-ccw.svg" alt="" />
+								<img class="rotate-anti" src="../icons/rotate-cw.svg" alt="" />
+								<img class="flip-h" src="../icons/flip-h.svg" width="25" />
+								<img class="flip-v" src="../icons/flip-v.svg" width="25" />
+							</div>
+							<div><button class="btn outline">RESET</button></div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="text-right">
+							<div class="img-preview">
+								<img class="img-editor" src="host.png" width="300" />
+							</div>
+						</div>
+						<div class="btns">
+							<input type="file" class="file-img" />
+							<button class="choose-img btn">CHOOSE IMAGE</button>
+							<button class="btn sav-img">SAVE IMAGE</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

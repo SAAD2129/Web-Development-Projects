@@ -1,0 +1,138 @@
+.navBar ul li a {
+	color: var(--font2-color);
+}
+.navBar ul li a:hover {
+	color: white;
+	background-color: var(--bg-color);
+	transition: all 0.3s ease-in;
+	border-radius: 0.1rem;
+}
+body {
+	background-color: #efefef;
+}
+header {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.logo h2 a {
+	color: var(--main-color);
+	transition: all 0.2s ease-in;
+}
+.logo h2 a:hover {
+	color: var(--hover-color);
+}
+.header-icons img {
+	padding: 0.5rem;
+	border-radius: 50%;
+	background-color: rgb(225, 223, 223);
+	width: 2.5rem;
+}
+.header-icons img:hover {
+	transition: all 0.25s ease-in;
+	cursor: pointer;
+	background-color: var(--bg-color);
+}
+.container {
+	padding: 2% 8%;
+}
+.items {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+}
+.img-item img {
+	width: 80%;
+}
+#popularDishes {
+}
+section {
+	padding: 3% 7%;
+}
+.card-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+}
+.card {
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 0.5rem;
+	padding: 1rem 3rem;
+	background-color: #fff;
+}
+.card-item-rating,
+.price-item {
+	color: var(--bg-color);
+}
+.card-item-name {
+	color: var(--main-color);
+}
+
+#ourMenu .card {
+	text-align: left;
+	padding: 1rem;
+}
+#ourMenu .card-img img {
+	width: 100%;
+}
+.reviews {
+	padding: 2% 5%;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+.review-card {
+	padding: 1rem;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 0.3rem;
+	border: 0.05rem solid rgb(210, 210, 210);
+}
+.user-img img {
+	border-radius: 50%;
+	width: 4rem;
+	height: 4rem;
+}
+form {
+	width: 80%;
+	margin: auto;
+	background-color: #fff;
+	padding: 1rem;
+}
+form input,
+textarea {
+	background-color: #efefef;
+	padding: 0.5rem;
+	outline: none;
+	border: none;
+	resize: none;
+}
+form label {
+	color: #a9a4a4;
+	display: block;
+	margin: 0.2rem 0;
+	cursor: pointer;
+}
+form label:hover {
+	transition: all 0.2s ease-in;
+	color: #656464;
+}
+.input {
+	width: 100%;
+}
+input,
+textarea {
+	width: 100%;
+}
+footer {
+	padding: 1% 8%;
+	background-color: #fff;
+}
+
+footer li a {
+	color: gray;
+}
+footer li a:hover {
+	color: rgb(81, 81, 81);
+	transition: all 0.2s linear;
+}
+footer ul{
+    margin-top: 1rem;
+}

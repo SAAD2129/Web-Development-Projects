@@ -1,37 +1,18 @@
-.container {
-    width: 50%;
-    margin: auto;
-}
-
-body {
-
-    transition: all .3s ease-in-out;
-    background-color: #efefef;
-}
-
-.head {
-    background-color: #fff;
-    padding: 0.5rem;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
-    margin: 0.5rem 0;
-    cursor: pointer;
-
-}
-
-* {
-
-    transition: all .2s ease-in-out;
-}
-
 .hider {
-    margin: 2rem 0;
 }
-
-.p-hider {}
-
-.hide {
-    transition: all .3s ease-in-out;
-    /* opacity: 0
-    ; */
-    display: none;
+body {
+	width: 50%;
+	margin: auto;
+	gap: 1rem;
+}
+.hider {
+	margin: 1rem 0;
+	background-color: #000;
+	color: #fff;
+	padding: 0 0.5rem;
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+}
+.para {
+	display: none;
 }

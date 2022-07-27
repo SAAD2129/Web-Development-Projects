@@ -4,6 +4,7 @@ Display = () => {
 	let word = document.querySelector(".words");
 
 	newTex = text.slice(0, index);
+	console.log(newTex);
 	word.innerHTML = newTex;
 	index++;
 	if (index > text.length) {

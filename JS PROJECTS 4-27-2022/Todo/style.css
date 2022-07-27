@@ -1,58 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
+.todo {
+	display: flex;
+	align-items: center;
+	/* padding: 5rem; */
+
+	background-color: #fff;
 }
-.Box-container {
-  min-height: 100vh;
-  background-color: rgb(123, 151, 235);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s ease;
-  /* background: rgba(0, 0, 0, 0.5); */
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #efefef;
 }
-.Modal {
-  width: 50vw;
-  /* height: 20vw; */
-  background-color: #fff;
-  padding: 3rem;
-  box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
-  line-height: 2rem;
-  position: relative;
-  display: none;
-  transition: all 0.8s ease;
+.todo input {
+	background-color: transparent;
+	border: none;
+	position: relative;
+	font-size: 1.2rem;
+	z-index: -1;
+	/* background-color: #efefef; */
+	outline: none;
+	width: 15rem;
 }
-.Modal h3 {
-  transition: all 0.3s ease;
+.todo-container{
+	width: 20vw;
 }
-#Close {
-  position: absolute;
-  top: 0%;
-  cursor: pointer;
-  right: 2.5%;
-  transition: all 0.3s ease-in;
-}
-#Close:hover {
-  color: rgb(123, 151, 235);
-}
-button {
-  background-color: rgb(175, 97, 254);
-  border: none;
-  outline: none;
-  padding: 0.7rem 3rem;
-  font-weight: bold;
-  font-size: 1.2rem;
-  cursor: pointer;
-  border-radius: 0.3rem;
-  transition: all 0.3s ease;
-}
-button:hover {
-  color: #fff;
-  background-color: rgb(118, 15, 222);
+.todo-item {
+	background-color: #fff;
+	padding: 0.5rem;
+	margin: 1rem 0;
+	/* display: flex;
+	align-items: center;
+	justify-content: space-between; */
+	/* width: 15rem; */
+	width: 100%;
 }

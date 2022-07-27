@@ -1,3 +1,4 @@
+// All selectors are here & all variable intializations
 let closeBtn = document.querySelector(".closeBtn");
 let navigation = document.querySelector(".navigation");
 let menuBtn = document.querySelector(".menuBtn");
@@ -19,7 +20,9 @@ let BarmenuBtn = document.querySelector(".BarmenuBtn");
 let navItems = Array.from(document.querySelectorAll(".nav-item"));
 let dt = new Date().getHours();
 let barmode = document.querySelector(".barmode");
-
+let text = "SAJID";
+let index = 0;
+let myName = document.querySelector(".myName");
 // Menu
 menuBtn.onclick = () => {
 	// let literal = document.querySelector(".literal");
@@ -154,3 +157,21 @@ sendBtn.onclick = () => {
 		Description.value = "";
 	}, 300);
 };
+
+Display = () => {
+	newTex = text.slice(0, index);
+	console.log(newTex);
+	myName.innerHTML = newTex;
+	index++;
+	if (index > text.length) {
+		index = 0;
+	}
+};
+
+setTimeout(Display, 200);
+setTimeout(Display, 600);
+setTimeout(Display,800);
+setTimeout(Display, 1000);
+setTimeout(Display, 1200);
+setTimeout(Display, 1400);
+

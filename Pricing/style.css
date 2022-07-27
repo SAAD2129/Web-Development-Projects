@@ -1,0 +1,59 @@
+hr {
+	margin: 1rem 0;
+	border: none;
+	outline: none;
+	height: 0.01rem;
+	background-color: rgb(221, 221, 221);
+	border-radius: 0.5rem;
+}
+.Box-container {
+	display: flex;
+	padding: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+body {
+	height: 100vh;
+	align-items: center;
+	display: flex;
+	background: #efefef;
+	flex-direction: column;
+	justify-content: center;
+}
+.box {
+	background-color: #fff;
+	padding: 2rem;
+	text-align: center;
+	width: 400px;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+.box:nth-child(2) {
+	position: relative;
+	z-index: 10;
+	width: 410px;
+	padding: 3rem 2rem;
+	background-color: var(--main-color);
+	color: #fff;
+}
+.button {
+	background-color: #fff;
+	width: 4rem;
+	height: 1.8rem;
+	border-radius: 2rem;
+	display: flex;
+	align-items: center;
+}
+.circle {
+	cursor: pointer;
+	background-color: var(--main-color);
+	width: 1.6rem;
+	height: 1.6rem;
+	position: relative;
+	left: 0.3rem;
+	border-radius: 50%;
+	transition: all 0.3s ease-in;
+}
+.circle:hover {
+	background-color: var(--hover-color);
+}
