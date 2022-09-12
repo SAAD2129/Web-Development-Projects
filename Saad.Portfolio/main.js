@@ -23,69 +23,72 @@ let barmode = document.querySelector(".barmode");
 let text = "SAJID";
 let index = 0;
 let myName = document.querySelector(".myName");
-// Menu
+let imgsNavs = navigation.querySelectorAll("img");
+
+// Menu // (max-width: 800px)
 menuBtn.onclick = () => {
-	// let literal = document.querySelector(".literal");
-	// document.body.classList.add("literal");
-	if (navigation.style.width == "16.5rem") {
-		navigation.style.width = "6rem";
-		document.body.style.paddingLeft = "6rem";
-		menuBtn.style.left = "6.5rem";
+
+	if (navigation.style.left == "0%") {
+		navigation.style.left = "-100%";
+		menuBtn.style.left = "2rem";
 		menuBtn.src = "../icons/menu-4-fill.svg";
 		navItems.forEach((navItem) => {
 			navItem.style.display = "none";
 		});
-		document.querySelector(".Profile").style.display = "none";
 	} else {
 		navItems.forEach((navItem) => {
 			navItem.style.display = "flex";
 		});
 		menuBtn.src = "../icons/close-fill.svg";
 		menuBtn.style.left = "90%";
-		document.querySelector(".Profile").style.display = "block";
-		navigation.style.width = "16.5rem";
+		navigation.style.left = "0%";
 	}
 };
 window.onscroll = () => {
-	if (navigation.style.width == "16.5rem") {
-		navigation.style.width = "6rem";
-		document.body.style.paddingLeft = "6rem";
-		menuBtn.style.left = "6.5rem";
+	let wid = innerWidth;
+	if (wid>400) {
+		navigation.style.left = "-100%";
+		menuBtn.style.left = "2rem";
 		menuBtn.src = "../icons/menu-4-fill.svg";
-		navItems.forEach((navItem) => {
-			navItem.style.display = "none";
-		});
-		document.querySelector(".Profile").style.display = "none";
-		BarmenuBtn.src = "./icons/menu-4-fill.svg";
-		navigation.style.bottom = "-100%";
+		// navItems.forEach((navItem) => {
+		// 	navItem.style.display = "none";
+		// });
 	}
+	
+	// document.querySelector(".Profile").style.display = "none";
+	// BarmenuBtn.src = "./icons/menu-4-fill.svg";
+	// navigation.style.bottom = "-100%";
 };
+
+
 
 // For Width 400 & less than 400
 
 BarmenuBtn.onclick = () => {
-	// navigation.classList.toggle('mob')
+	//Bar Open navigation 
 	if (navigation.style.bottom == "5.5%") {
 		BarmenuBtn.src = "./icons/menu-4-fill.svg";
 		navigation.style.bottom = "-100%";
-		navigation.style.width = "101vw";
+		navigation.style.width = "100vw";
 		navItems.forEach((navItem) => {
 			navItem.style.display = "none";
 		});
-	} else {
+	} else { //Bar Close navigation 
 		navigation.style.bottom = "5.5%";
-		navigation.style.width = "101vw";
+		navigation.style.width = "100vw";
+		navigation.style.left = "0%";
 		BarmenuBtn.src = "./icons/close-fill.svg";
 		navItems.forEach((navItem) => {
 			navItem.style.display = "block";
 		});
 	}
 };
+
 // Dark Mode Settings
 
 barmode.addEventListener("click", () => {
 	document.body.classList.toggle("DarkMode");
-	menuBtn.classList.toggle("inverted");
+	// menuBtn.classList.toggle("inverted");
 
 	if (localStorage.getItem("theme") == "dark") {
 		localStorage.setItem("theme", "light");
@@ -143,10 +146,11 @@ sendBtn.addEventListener("click", () => {
 		modal.style.display = "flex";
 	}
 	NameContainer.innerText = n;
+	setTimeout(() => {
+		modal.style.display = "none";
+	}, 3000);
 });
-setTimeout(() => {
-	modal.style.display = "none";
-}, 2000);
+
 // Contact Form Data To Gmail
 // & it's Reseting
 sendBtn.onclick = () => {
@@ -156,6 +160,7 @@ sendBtn.onclick = () => {
 		PhoneNum.value = "";
 		Description.value = "";
 	}, 300);
+	
 };
 
 Display = () => {
@@ -170,8 +175,7 @@ Display = () => {
 
 setTimeout(Display, 200);
 setTimeout(Display, 600);
-setTimeout(Display,800);
+setTimeout(Display, 800);
 setTimeout(Display, 1000);
 setTimeout(Display, 1200);
 setTimeout(Display, 1400);
-
