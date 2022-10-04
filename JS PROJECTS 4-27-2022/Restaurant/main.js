@@ -11,8 +11,13 @@ let itemNames = Array.from(document.querySelectorAll(".item-name"));
 
 search.addEventListener('change', (e) => {
 
+
+
 	items.forEach((item) => {
 		let cat = item.dataset.category;
+		if(e.target.value.includes(cat)){
+			console.log('ehr');
+		}
 		item.style.display = "none";
 		if (e.target.value == cat || e.target.value == cat.toUpperCase() || e.target.value == cat.toLowerCase() || e.target.value == 'all' || e.target.value == 'ALL') {
 			CatName.innerText = e.target.value;
@@ -20,7 +25,7 @@ search.addEventListener('change', (e) => {
 
 			item.style.display = "block";
 		}
-
+		
 		itemNames.forEach((item) => {
 			item.style.display = "none";
 			let newItem = item.innerText;

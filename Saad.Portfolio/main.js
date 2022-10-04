@@ -17,12 +17,14 @@ let modeBtn = document.querySelector(".modeBtn");
 let inps = Array.from(document.querySelectorAll(".inp"));
 let em, na, num;
 let BarmenuBtn = document.querySelector(".BarmenuBtn");
-let navItems = Array.from(document.querySelectorAll(".nav-item"));
 let dt = new Date().getHours();
 let barmode = document.querySelector(".barmode");
-let text = "SAJID";
+let text = "Sajid";
 let index = 0;
 let myName = document.querySelector(".myName");
+let tx2 = "Web Developer";
+let Porfession = document.querySelector(".profession");
+
 let imgsNavs = navigation.querySelectorAll("img");
 
 // Menu // (max-width: 800px)
@@ -32,13 +34,7 @@ menuBtn.onclick = () => {
 		navigation.style.left = "-100%";
 		menuBtn.style.left = "2rem";
 		menuBtn.src = "../icons/menu-4-fill.svg";
-		navItems.forEach((navItem) => {
-			navItem.style.display = "none";
-		});
 	} else {
-		navItems.forEach((navItem) => {
-			navItem.style.display = "flex";
-		});
 		menuBtn.src = "../icons/close-fill.svg";
 		menuBtn.style.left = "90%";
 		navigation.style.left = "0%";
@@ -46,7 +42,7 @@ menuBtn.onclick = () => {
 };
 window.onscroll = () => {
 	let wid = innerWidth;
-	if (wid>400) {
+	if (wid > 400) {
 		navigation.style.left = "-100%";
 		menuBtn.style.left = "2rem";
 		menuBtn.src = "../icons/menu-4-fill.svg";
@@ -54,62 +50,26 @@ window.onscroll = () => {
 		// 	navItem.style.display = "none";
 		// });
 	}
-	
+
 	// document.querySelector(".Profile").style.display = "none";
 	// BarmenuBtn.src = "./icons/menu-4-fill.svg";
 	// navigation.style.bottom = "-100%";
 };
 
-
-
-// For Width 400 & less than 400
-
-BarmenuBtn.onclick = () => {
-	//Bar Open navigation 
-	if (navigation.style.bottom == "5.5%") {
-		BarmenuBtn.src = "./icons/menu-4-fill.svg";
-		navigation.style.bottom = "-100%";
-		navigation.style.width = "100vw";
-		navItems.forEach((navItem) => {
-			navItem.style.display = "none";
-		});
-	} else { //Bar Close navigation 
-		navigation.style.bottom = "5.5%";
-		navigation.style.width = "100vw";
-		navigation.style.left = "0%";
-		BarmenuBtn.src = "./icons/close-fill.svg";
-		navItems.forEach((navItem) => {
-			navItem.style.display = "block";
-		});
-	}
-};
-
 // Dark Mode Settings
-
-barmode.addEventListener("click", () => {
-	document.body.classList.toggle("DarkMode");
-	// menuBtn.classList.toggle("inverted");
-
-	if (localStorage.getItem("theme") == "dark") {
-		localStorage.setItem("theme", "light");
-	} else {
-		localStorage.setItem("theme", "dark");
-	}
-});
-
-if (localStorage.getItem("theme") == "dark") {
-	document.body.classList.remove("DarkMode");
-	BarmenuBtn.classList.remove("inverted");
-	menuBtn.classList.remove("inverted");
-} else if (localStorage.getItem("theme") == "light") {
-	document.body.classList.add("DarkMode");
-	BarmenuBtn.classList.add("inverted");
-	menuBtn.classList.add("inverted");
-} else {
-	localStorage.setItem("theme", "light");
-	BarmenuBtn.classList.remove("inverted");
-	menuBtn.classList.remove("inverted");
-}
+// if (localStorage.getItem("theme") == "dark") {
+// 	document.body.classList.remove("DarkMode");
+// 	BarmenuBtn.classList.remove("inverted");
+// 	menuBtn.classList.remove("inverted");
+// } else if (localStorage.getItem("theme") == "light") {
+// 	document.body.classList.add("DarkMode");
+// 	BarmenuBtn.classList.add("inverted");
+// 	menuBtn.classList.add("inverted");
+// } else {
+// 	localStorage.setItem("theme", "light");
+// 	BarmenuBtn.classList.remove("inverted");
+// 	menuBtn.classList.remove("inverted");
+// }
 // For Width more than 400
 modeBtn.addEventListener("click", () => {
 	document.body.classList.toggle("DarkMode");
@@ -160,7 +120,7 @@ sendBtn.onclick = () => {
 		PhoneNum.value = "";
 		Description.value = "";
 	}, 300);
-	
+
 };
 
 Display = () => {
@@ -173,9 +133,11 @@ Display = () => {
 	}
 };
 
-setTimeout(Display, 200);
-setTimeout(Display, 600);
+
+
+setTimeout(Display, 400);
 setTimeout(Display, 800);
-setTimeout(Display, 1000);
 setTimeout(Display, 1200);
-setTimeout(Display, 1400);
+setTimeout(Display, 1600);
+setTimeout(Display, 2000);
+setTimeout(Display, 2400);

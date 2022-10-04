@@ -98,12 +98,12 @@ body {
 }
 
 .left {
-	position: sticky;
+	/* position: sticky; */
 	top: 25px;
 	margin: 0.5rem 0 0 0.5rem;
 	flex-basis: 20%;
 	max-height: 90vh;
-  border-radius: 1rem;
+  	border-radius: 1rem;
 	background-color: #fff;
 	padding: 1rem 0rem 0rem 1rem;
 }
