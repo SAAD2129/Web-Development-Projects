@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width , initial-scale=1.0" />
+	<title>Rymo.</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<script defer src="main.js"></script>
+	<link rel="stylesheet" href="Utility.css" />
+</head>
+
+<body>
+
+	<!-- LOGIN PAGE HERE -->
+	<div class="modal">
+		<i class="uil close-modal uil-times"></i>
+		<div>
+
+			<input type="email" name="email" id="email" placeholder="Enter your email">
+			<p class="modal-text">
+			</p>
+		</div>
+		<div>
+			<button class="btn send-code m-auto block">Send Code</button>
+		</div>
+	</div>
+
+	</div>
+	<div class="container">
+
+		<div class="form-control">
+			<i class="uil close-Form uil-times"></i>
+			<form action="#" id="LoginForm">
+				<h2 class="center mb-5 ">Login Account</h2>
+				<div class="form-inp">
+					<input type="text" class="UserName" placeholder="User Name">
+				</div>
+				<div class="form-inp">
+					<input type="password" class="Password" placeholder="Password">
+				</div>
+				<div class="other-options">
+					<a href="#"></a>
+					<a href="#"><i class="uil uil-google"></i></a>
+					<a href="#"><i class="uil uil-facebook"></i></a>
+					<a href="#"><i class="uil uil-twitter"></i></a>
+				</div>
+				<div>
+					<p class="center mt-3"><a class="color-dark signUp weight-600 p-font" href="#">Sign up</a></p>
+					<button id="loginBtn">Login</button>
+					<button class="center forgot-pass mt-1 block color-gray"> Forgot Password ?</button>
+				</div>
+			</form>
+
+
+			<!-- /***===================== REGISTRATION FORM ========================***\ -->
+			<form action="#" id="RegisForm">
+				<h2 class="center mb-5 ">Register Account</h2>
+				<div class="form-inp">
+					<input type="email" name="email" required id="Regemail" placeholder="Enter Email">
+				</div>
+				<div class="form-inp">
+					<input type="text" name="user" required id="RegUserName" placeholder="User Name">
+				</div>
+				<div class="form-inp">
+					<input type="password" name="pass" required id="RegPassword" placeholder="Password">
+				</div>
+				<div class="form-inp">
+					<input type="password" name="confpass" required class="confirmPass"
+						placeholder="Confrim Password">
+				</div>
+				<div>
+					<p class="center mt-3"><a class="color-dark weight-600 logIn p-font" href="#">Log in</a></p>
+					<button id="regBtn">Register</button>
+					<p> &nbsp;</p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- LOGIN PAGE ENDS HERE -->
+
+	<header>
+		<div class="logo">
+			<a href="#"><img src="./EccomImages/logo1.png" /></a>
+		</div>
+		<nav id="Navigation">
+			<li><a class="nav-links" href="#home">Home</a></li>
+			<li><a class="nav-links" href="#ourproducts">Shop</a></li>
+			<li><a class="nav-links" href="#">Blog</a></li>
+			<li><a class="nav-links" href="#">About</a></li>
+			<li><a class="nav-links" href="#">Contact us</a></li>
+			<li>
+				<a href="#" class="nav-links">
+					<i class="nav-icon uil uil-search" align="center" ></i></a>
+			</li>
+			<li>
+				<a href="#" class="nav-links"><i class="nav-icon uil uil-shopping-bag" align="center"></i></a>
+			</li>
+			<li>
+				<button class="m-0 btn logBtn">Login</button>
+			</li>
+		</nav>
+		<img class="Menu" src="../icons/align-center-justify.svg" />
+	</header>
+	<main>
+		<section id="home">
+			<div class="Slogan">
+				<p class="p-font">NEW ARRIVALS</p>
+				<h1 class="small-font"><span class="main-color">Best Price</span> This Year</h1>
+				<p class="line-height">Shoomatic offers your very comfortable time</p>
+				<p class="line-height">on walking and excersises</p>
+
+				<button class="btn btn-dark">SHOP NOW</button>
+			</div>
+		</section>
+		<div class="brands">
+			<img src="./EccomImages/brand/1.png" />
+			<img src="./EccomImages/brand/2.png" />
+			<img src="./EccomImages/brand/3.png" />
+			<img src="./EccomImages/brand/4.png" />
+			<img src="./EccomImages/brand/5.png" />
+			<img src="./EccomImages/brand/6.png" />
+		</div>
+		<section class="new">
+			<div class="row">
+				<div class="col">
+					<div class="z">
+						<h2 class="px-1">Extreme Rare Sneakers</h2>
+						<div class="button">
+							<a class="p-min mx-1" href="#">SHOP NOW</a>
+						</div>
+						<div class="layer"></div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="z">
+						<h2 class="px-1">Awesome Blank Outfit</h2>
+						<div class="button">
+							<a class="p-min mx-1" href="#">SHOP NOW</a>
+						</div>
+						<div class="layer"></div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="z">
+						<h2 class="px-1">Extreme Rare Sneakers</h2>
+						<div class="button">
+							<a class="p-min mx-1" href="#">SHOP NOW</a>
+						</div>
+						<div class="layer"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="feature">
+			<h2 class="bottom relative center py-2">Our Featured</h2>
+			<p class="center mb-5">Here you can check out new products with fair price on ryme</p>
+			<div class="row">
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/featured/1.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports Shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/featured/2.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports Shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/featured/3.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports Shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/featured/4.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports Shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="mainimg" class="flex item-center">
+			<div class="font-color pl-5">
+				<p class="p-font weight-600">MID SEASON'S SALE</p>
+				<h2 class="med-font">Autumn Collection</h2>
+				<h2 class="med-font">UP TO 20% OFF</h2>
+				<div class="mt-2">
+					<a href="#" class="btn">SHOP NOW</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="dresses">
+			<h2 class="center relative py-1 bottom py-2">Dresses & Jumpsuits</h2>
+			<p class="center mb-5">Here you can check out new products with fair price on ryme</p>
+			<div class="row">
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/clothes/1.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports Shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/clothes/2.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports Shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/clothes/3.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports Shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/clothes/2.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports Shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="watches">
+			<div class="title center">
+				<h2 class="bottom relative py-2">Best Watches</h2>
+				<p class="mb-5">Here you can check out new products with fair price on ryme</p>
+			</div>
+			<div class="row">
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/watches/1.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports watch</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/watches/2.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports watch</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/watches/3.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports watch</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/watches/4.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports watch</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="shoes">
+			<div class="title center">
+				<h2 class="bottom relative py-2">Running Shoes</h2>
+				<p class="mb-5">Here you can check out new products with fair price on ryme</p>
+			</div>
+			<div class="row">
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shoes/1.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Runnning shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shoes/2.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Runnning shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shoes/3.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Runnning shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shoes/4.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Runnning shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shoes/5.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Runnning shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shoes/6.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Runnning shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shoes/7.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Runnning shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shoes/8.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Runnning shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="Buy min-height">
+			<div class="imgProduct">
+				<img id="imgProd" src="./EccomImages/shop/16.jpg" />
+			</div>
+			<div class="DetailsProduct">
+				<p class="p-font">Home / T-shirt</p>
+				<h2 class="my-2" id="name">Men's Fashion T-Shirt</h2>
+				<div class="details my-3">
+					<h3 class="priceMain">$95.00</h3>
+					<div class="select my-1">
+						<select>
+							<option value="">Xl</option>
+							<option value="">L</option>
+							<option value="">M</option>
+							<option value="">S</option>
+							<option value="">ES</option>
+						</select>
+					</div>
+					<div class="my-1">
+						<input type="number" value="1" /> <button id="CartBtn" class="ml-1 btn bold">Add To
+							Cart</button>
+						<button id="MainBuyNow" class="ml-1 btn bold">Buy Now</button>
+					</div>
+				</div>
+				<h3 class="mb-1">Product Details</h3>
+				<p class="pr-5 line-height">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium iure sunt autem maiores,
+					error minima ut quaerat temporibus voluptatem, nihil in
+					harum distinctio sed? Alias ab blanditiis cupiditate fugiat reprehenderit?
+				</p>
+			</div>
+		</div>
+		<section id="ourproducts">
+			<h2 class="relative py-2 left">Our Products</h2>
+			<p class="mb-5">Here you can check out new products with fair price on ryme</p>
+			<div class="row">
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shop/1.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Runnning shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shop/2.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Runnning shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shop/3.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Runnning shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shop/4.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Runnning shoes</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shop/5.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports watch</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shop/6.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports watch</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shop/7.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports watch</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+				<div class="col pointer">
+					<img class="productimg" src="./EccomImages/shop/8.jpg" />
+					<div class="productdetails pt-1 line-height center">
+						<div class="rating letter-spacing p-font">&starf;&starf;&starf;&starf;&starf;</div>
+						<div class="name">Sports watch</div>
+						<h4 class="price">$30.00</h4>
+					</div>
+					<div class="btns my-min">
+						<a href="#imgProd" class="btn buyNow m-auto btn-big weight-600">Buy Now</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="pagination">
+				<a href="#" class="btn btn-sm">Previous</a>
+				<a href="#" class="page">1</a>
+				<a href="#" class="page">2</a>
+				<a href="##" class="page">3</a>
+				<a href="#" class="page">4</a>
+				<a href="#" class="btn btn-sm">Next</a>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="rowfooter">
+			<div class="colfooter">
+				<img class="mb-1" src="./EccomImages/logo2.png" />
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure fugit, nam cupiditate facere sint
+					iste.</p>
+			</div>
+			<div class="colfooter">
+				<h2 class="mb-1">Feautured</h2>
+				<ul>
+					<li>
+						<a href="#">MEN</a>
+					</li>
+					<li><a href="#">WOMEN</a></li>
+					<li><a href="#">BOYS</a></li>
+					<li><a href="#">GIRLS</a></li>
+					<li><a href="#">NEW ARRIVALS</a></li>
+					<li><a href="#">SHOES</a></li>
+					<li><a href="#">CLOTHES</a></li>
+				</ul>
+			</div>
+			<div class="colfooter">
+				<h2 class="mb-1">Contact Us</h2>
+				<ul>
+					<li>
+						<p class="p-font p-">ADDRESS</p>
+						<small>123 STREET NAME,CITY</small>
+					</li>
+					<li>
+						<p class="p-font">PHONE</p>
+						<small>12348572893</small>
+					</li>
+					<li>
+						<p class="p-font">EMAIL</p>
+						<small>mrsaad2129@gmail.com</small>
+					</li>
+				</ul>
+			</div>
+			<div class="colfooter">
+				<h2>Instagram</h2>
+				<div class="instaimgs">
+					<img src="./EccomImages/insta/1.jpg" />
+					<img src="./EccomImages/insta/2.jpg" />
+					<img src="./EccomImages/insta/3.jpg" />
+					<img src="./EccomImages/insta/4.jpg" />
+					<img src="./EccomImages/insta/5.jpg" />
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<img class="payment" src="payment.png" />
+			</div>
+			<div class="col">
+				<p>rymo eCommerce &copy; Copyright All rights Reserved</p>
+			</div>
+			<div class="col">
+				<div class="sociallinks">
+					<a href="#" class="mx-min"><i class="uil uil-facebook-f"></i></a>
+					<a href="#" class="mx-min"><i class="uil uil-instagram"></i></a>
+					<a href="#" class="mx-min"><i class="uil uil-twitter-alt"></i></a>
+					<a href="#" class="mx-min"><i class="uil uil-linkedin-alt"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

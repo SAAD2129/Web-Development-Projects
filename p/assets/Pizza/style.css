@@ -1,0 +1,263 @@
+header {
+	/* height: 90vh; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2% 10%;
+	position: sticky;
+	top: 0;
+	background-color: #fff;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+	z-index: 343234;
+
+}
+
+.carcontMaine {
+	height: 80vh;
+	background: url("/assets/Pizza/imgBackendPizza/home-bg.jpg") no-repeat center center/cover;
+	width: 100%;
+	padding: 2% 6%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo a {
+	color: var(--main-color);
+}
+
+.carimg {
+	transition: all 0.3s ease;
+	width: 35vw;
+	/* margin: 0 3rem; */
+}
+
+.carcont {
+	transition: all 0.3s ease;
+	/* padding: 2% 8%; */
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	gap: 3rem;
+	align-items: center;
+	width: 35vw;
+	/* justify-content: center; */
+}
+
+.carimg img {
+	width: 32vw;
+	object-fit: contain;
+	display: block;
+	margin: auto;
+}
+
+.nav-icon {
+	display: none;
+}
+
+.btns {
+	padding: 0.1rem;
+	margin: 1rem;
+	background-color: #fff;
+}
+
+.acounting i {
+	font-size: 2rem;
+	color: var(--main-color);
+}
+
+#next,
+#prev {
+	/* width: 3rem; */
+	font-size: 2.5rem;
+	color: black;
+	border-radius: 0.3rem;
+	/* padding: 0.05rem; */
+	cursor: pointer;
+	background-color: #fff;
+	margin: 1rem;
+}
+
+.nav-links {
+	color: var(--main-color);
+	font-weight: 600;
+}
+
+.nav-links:hover {
+	transition: all 0.3s ease-in;
+	color: #000;
+}
+
+.PizzaNames {
+	color: #fff;
+	flex-basis: 35%;
+}
+
+.PizzaName {
+	color: #fff;
+}
+
+#aboutus {
+	padding: 3% 12%;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+	gap: 2rem;
+	margin: 3rem 0;
+}
+
+.col {
+	/* width: 50%; */
+	text-align: center;
+	padding: 1rem;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+	width: 80%;
+	display: block;
+	margin: auto;
+}
+
+.quantity {
+	width: 4rem;
+	height: 2.5rem;
+	padding: 0.5rem;
+	border: 1px solid gray;
+	outline: none;
+	border-radius: 0.3rem;
+}
+
+#menu {
+	padding: 2% 10%;
+}
+
+#Faq {
+	width: 50%;
+	margin: auto;
+	min-height: 50vh;
+}
+
+.hide {
+	height: 0;
+
+	overflow: hidden;
+}
+
+.show {
+	height: auto;
+	transition: all 0.3s ease;
+	padding: 0.5rem;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bg-orange {
+	background-color: var(--main-color) !important;
+}
+
+.icon-footer {
+	padding: 0.5rem 0.7rem;
+	border-radius: 50%;
+	background-color: var(--main-color);
+	width: 3rem;
+	font-size: 1.5rem;
+	margin: 1rem 0;
+	display: inline-block;
+}
+
+.footer .row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+footer .col {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+footer {
+	padding: 2% 7%;
+}
+
+#MenuBtn {
+	position: fixed;
+	top: 0.2rem;
+	right: 1.5rem;
+	/* width: 2rem; */
+	font-size: 2.5rem;
+	color: var(--main-color);
+	z-index: 50000;
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+	display: none;
+}
+
+#MenuBtn:hover {
+	filter: invert(40%);
+}
+
+@media screen and (max-width: 760px) {
+	.carcontMaine {
+		flex-direction: column;
+	}
+
+	#MenuBtn {
+		display: block;
+		z-index: 155543243;
+	}
+
+	.navigation {
+		display: block !important;
+		position: fixed;
+		top: 0;
+		left: -100%;
+		background: #fff;
+		width: 100%;
+		padding: 10% 2%;
+
+		height: 100vh;
+		z-index: 1555;
+		font-size: 2rem;
+		transition: all 0.3s ease-in;
+	}
+
+	.navigation a {
+		display: block;
+		margin: 0.8rem;
+	}
+
+	.navigation a:hover {
+		background-color: var(--main-color);
+	}
+
+	.PizzaNames {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#MenuBtn {
+		width: 1.5rem;
+	}
+
+	.carimg {
+		width: 65vw;
+	}
+
+	.carcont {
+		width: 65vw;
+	}
+
+	.carimg img {
+		width: 55vw;
+	}
+
+	.acounting img {
+		width: 1.05rem;
+	}
+
+	header {
+		padding: 2% 18%;
+	}
+}
