@@ -14,7 +14,7 @@ html{
 }
 
 :root {
-  --main-color:rgb(233, 157, 15);
+  --main-color:#e99d0f;
   --grad-color:linear-gradient(90deg,rgb(233, 157, 15),rgb(215, 172, 91));
   --bg-color:  rgba(134, 132, 132, 0.355);
   --hover-color: rgb(187, 135, 38);

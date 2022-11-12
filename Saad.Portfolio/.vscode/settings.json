@@ -1,8 +1,11 @@
 {
-	"workbench.colorTheme": "Community Material Theme",
+	"workbench.colorTheme": "One Dark Pro Darker",
 	"editor.cursorWidth": 3,
 	"files.associations": {
 		"ostream": "cpp"
 	},
-	"editor.tabSize": 5
+	"editor.tabSize": 5,
+	"editor.fontFamily": "'JetBrains Mono'",
+	"editor.lineHeight": 1.4,
+	"editor.fontSize": 15
 }

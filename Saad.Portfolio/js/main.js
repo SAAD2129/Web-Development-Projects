@@ -32,46 +32,37 @@ menuBtn.onclick = () => {
 
 	if (navigation.style.left == "0%") {
 		navigation.style.left = "-100%";
-		menuBtn.style.left = "2rem";
-		menuBtn.classList.add("uil-bars");
-		menuBtn.classList.remove("uil-times");
+		menuBtn.style.left = "1.5rem";
+		menuBtn.src = "icons/menu.svg"
+		if ("theme" == "dark") {
+			menuBtn.classList.add("inverted")
+		}
 	} else {
 		menuBtn.style.left = "90%";
 		navigation.style.left = "0%";
-		menuBtn.classList.remove("uil-bars");
-		menuBtn.classList.add("uil-times");
+		menuBtn.src = "icons/close.svg"
+		if ("theme" == "dark") {
+			menuBtn.classList.add("inverted")
+		}
 	}
 };
 window.onscroll = () => {
-	let wid = innerWidth;
-	if (wid > 400) {
-		navigation.style.left = "-100%";
-		menuBtn.style.left = "2rem";
-		menuBtn.src = "../icons/menu-4-fill.svg";
-		// navItems.forEach((navItem) => {
-		// 	navItem.style.display = "none";
-		// });
-	}
-
-	// document.querySelector(".Profile").style.display = "none";
-	// BarmenuBtn.src = "./icons/menu-4-fill.svg";
-	// navigation.style.bottom = "-100%";
+	navigation.style.left = "-100%";
+	menuBtn.style.left = "1.5rem";
+	menuBtn.src = "icons/menu.svg"
 };
 
 // Dark Mode Settings
-// if (localStorage.getItem("theme") == "dark") {
-// 	document.body.classList.remove("DarkMode");
-// 	BarmenuBtn.classList.remove("inverted");
-// 	menuBtn.classList.remove("inverted");
-// } else if (localStorage.getItem("theme") == "light") {
-// 	document.body.classList.add("DarkMode");
-// 	BarmenuBtn.classList.add("inverted");
-// 	menuBtn.classList.add("inverted");
-// } else {
-// 	localStorage.setItem("theme", "light");
-// 	BarmenuBtn.classList.remove("inverted");
-// 	menuBtn.classList.remove("inverted");
-// }
+if (localStorage.getItem("theme") == "dark") {
+	document.body.classList.remove("DarkMode");
+	menuBtn.classList.remove("inverted");
+} else if (localStorage.getItem("theme") == "light") {
+	document.body.classList.add("DarkMode");
+	menuBtn.classList.add("inverted");
+} else {
+	localStorage.setItem("theme", "light");
+	menuBtn.classList.remove("inverted");
+}
 // For Width more than 400
 modeBtn.addEventListener("click", () => {
 	document.body.classList.toggle("DarkMode");
@@ -127,7 +118,7 @@ sendBtn.onclick = () => {
 
 Display = () => {
 	newTex = text.slice(0, index);
-	console.log(newTex);
+	// console.log(newTex);
 	myName.innerHTML = newTex;
 	index++;
 	if (index > text.length) {

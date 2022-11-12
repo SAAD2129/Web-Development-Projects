@@ -53,7 +53,7 @@ html::-webkit-scrollbar-track {
 }
 
 .SocialHandles i {
-	font-size: 2.5rem;
+	font-size: 1.9rem;
 	color: var(--main-color);
 }
 
@@ -144,7 +144,7 @@ body {
 .DarkMode .about {
 	background-color: rgb(10, 12, 16);
 	color: #fff;
-	transition: all .5s ease-in;
+	transition: all .2s ease-in;
 	box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.1);
 }
 
@@ -200,9 +200,11 @@ body {
 
 #menuBtn {
 	position: fixed;
-	left: 2rem;
-	font-size: 5rem;
-	z-index: -1;
+	left: 1.5rem;
+	top: 1rem;
+	/* font-size: 5rem; */
+	width: 4rem;
+	z-index: 53125123532535;
 	transition: all 0.2s ease-in;
 	cursor: pointer;
 	display: none;
@@ -358,6 +360,7 @@ body {
 }
 
 .modeBtn {
+	font-size: 2rem;
 	cursor: pointer;
 }
 
@@ -382,8 +385,7 @@ body {
 }
 
 .row-projects img {
-	width: 97%;
-	height: 23rem;
+	width: 50%;
 	border-radius: .3rem;
 }
 
@@ -429,8 +431,8 @@ section {
 
 
 .skill p {
-	min-width: 25rem;
-	font-size: 1.3rem;
+	min-width: 15rem;
+	font-size: 1rem;
 	font-weight: 600;
 }
 
@@ -440,6 +442,18 @@ section {
 
 .html {
 	width: 95%;
+}
+
+.mongo {
+	width: 70%;
+}
+
+.express {
+	width: 76%;
+}
+
+.node {
+	width: 65%;
 }
 
 .dsa {
@@ -455,7 +469,7 @@ section {
 }
 
 .skill {
-	margin: 4rem 0;
+	margin: 2.3rem 0;
 }
 
 .line {
@@ -470,14 +484,15 @@ section {
 	position: absolute;
 	color: #fff;
 	background-color: var(--main-color);
-	font-size: 1rem;
-	padding: 0.35rem 1rem;
+	font-size: 11px;
+	padding: 0.15rem 0.65rem;
 	border-radius: 0.2rem;
-	top: -4rem;
-	right: -2rem;
+	top: -3rem;
+	right: -1.45rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 }
 
 .caret::before {
@@ -524,6 +539,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	max-width: 25rem;
 }
 
 .swiper-pagination-vertical.swiper-pagination-bullets,
@@ -553,7 +569,7 @@ section {
 
 .hireme::before {
 	content: "";
-	background: url("./bgfree.jpg") no-repeat center center/cover fixed;
+	background: url("../images/bgfree.jpg") no-repeat center center/cover fixed;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -691,24 +707,40 @@ footer .SocialHandles img {
 	}
 
 	header {
-		justify-content: center !important;
+		/* justify-content: center !important; */
+		padding: 1rem 4rem !important;
 	}
+
 }
 
 /* MEDIA QUERY FOR THE SCREEN  800 px  */
 @media screen and (max-width: 800px) {
+	header {
+		justify-content: center !important;
+		/* padding: 1rem 4rem!important; */
+	}
+
+
+	.row {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
 	#Services {
 		padding: 5% 3%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.modeBtn {
+		font-size: 3rem;
+		cursor: pointer;
 	}
 
 	.row-projects img {
 		width: 35rem;
 		height: 35rem;
 		border-radius: .3rem;
-	}
-
-	.row {
-		grid-template-columns: repeat(1, 1fr);
 	}
 
 	#About {
@@ -983,5 +1015,16 @@ footer .SocialHandles img {
 
 	.car img {
 		width: 50%;
+	}
+
+	.row-projects .center img {
+		width: 70%;
+		height: 15rem;
+	}
+
+	#menuBtn {
+		width: 3rem;
+		top: 1.5rem;
+		left: .35rem;
 	}
 }
