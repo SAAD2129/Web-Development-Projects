@@ -82,17 +82,11 @@ body {
 	margin: auto;
 	width: 80%;
 }
-.cart-btn img {
-	width: 3rem;
-	cursor: pointer;
-	border-radius: 0.3rem;
-	position: absolute;
-	top: 0%;
-	left: 0%;
+.colmenu i{
+	font-size: 2rem;
+	color: #000;
 }
-.cart-btn img:hover {
-	filter: invert(50%);
-}
+
 .serveimg img {
 	width: 50%;
 }
@@ -123,8 +117,11 @@ body {
 #footer h2 a {
 	color: #fff;
 	position: relative;
-	padding: 0.5rem;
+	padding: 0.8rem;
+	margin: .8rem 0;
+	display: inline-block;
 }
+
 #footer h2 a::before {
 	content: "";
 	background-color: var(--main-color);
@@ -150,9 +147,9 @@ body {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
-.socialimgs img:hover {
-	filter: grayscale(50%);
-	transform: scale(1.5);
+.sociallinks i {
+	font-size: 2rem;
+	margin:0 .5rem;
 	transition: all 0.3s ease-in;
 }
 @media screen and (max-width: 1200px) {

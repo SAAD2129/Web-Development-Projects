@@ -9,7 +9,7 @@ header {
 	width: 100%;
 	height: 100vh;
 	min-height: 60vh;
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../IMAGES/IMGSTBN/banner.png");
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./IMGSTBN/banner.png");
 }
 .homeSlogan {
 	display: flex;
@@ -51,15 +51,18 @@ header {
 #Navigation a {
 	position: relative;
 	color: #fff;
-
 	padding: 0.5rem;
 }
 #Navigation a:hover::after {
 	opacity: 1;
 	transition: all 0.3s ease-in-out;
 }
+.uil{
+	font-size: 2rem;
+	color: var(--main-color);
+}
 #Navigation a::after {
-	background-color: #fff;
+	background-color: var(--main-color);
 	content: "";
 	width: 40%;
 	display: block;
@@ -162,12 +165,20 @@ header {
 footer {
 	padding: 2% 5%;
 }
-.sociallinks img {
-	width: 1.5rem;
+.sociallinks a i {
+	font-size: 2rem;
+	color: black;
 	margin: 0 0.4rem;
+
 }
-.sociallinks a:hover img {
-	transform: translateY(-15px);
+.search i{
+	font-size: 1.5rem;
+}
+.idk i{
+	font-size: 2rem;
+}
+.sociallinks a i:hover {
+	color: rgb(100, 96, 96);
 	transition: all 0.2s ease-in-out;
 }
 #places {

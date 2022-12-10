@@ -7,15 +7,24 @@
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 	color: #fff;
 }
-.seIcon{
+.seIcon {
 	width: 25px;
+	display: flex;
 	align-self: center;
-
+	justify-self: center;
 }
-.seInput{
+.seInput {
+	transition: all 0.3s ease-in;
 	width: 0;
-	display: block;
-	/* display: none; */
+}
+.search-icon {
+	/* width: max-content; */
+	/* justify-content: center; */
+	background-color: #fff;
+	display: flex;
+	border-radius: 0.3rem;
+	align-items: center;
+	/* gap: 1rem; */
 }
 html {
 	scroll-behavior: smooth;
@@ -32,7 +41,7 @@ html {
 }
 #header::before {
 	content: "";
-	background: url("../IMAGES/imgFilm/hero-bg.jpg") no-repeat center center/cover;
+	background: url("./imgFilm/hero-bg.jpg") no-repeat center center/cover;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -81,21 +90,23 @@ a:hover {
 select {
 	border: none;
 	margin: 0 0.5rem;
-	height: 1.4rem;
+	height: 3.2rem;
+	border-radius: 0.3rem;
 	border: 2px solid #ebeb21eb;
 	cursor: pointer;
 	background-color: transparent;
+	outline: #ebeb21eb;
 }
-option {
+select option {
 	color: black;
 }
 .search-icon input {
 	border: none;
 	outline: none;
 	border-radius: 0.1rem;
-	padding: 0.3rem 0.5rem;
+	/* padding: 0.3rem 0.5rem; */
 	color: black;
-	margin: 0 0.3rem;
+	/* margin: 0 0.3rem; */
 }
 .btn {
 	background: transparent;
@@ -147,9 +158,8 @@ option {
 	margin: 2rem 0;
 }
 #upcoming-movies {
-	padding: 4rem 5rem;
-	min-height: 100vh;
-	background: url("../IMAGES/imgFilm/upcoming-bg.png") no-repeat center center/cover;
+	padding: 5%;
+	background: url("./imgFilm/upcoming-bg.png") no-repeat center center/cover;
 }
 .head {
 	display: flex;
@@ -192,8 +202,8 @@ option {
 }
 
 #OurServices {
-	min-height: 100vh;
-	background: url("../IMAGES/imgFilm/service-bg.jpg") no-repeat center center/cover;
+	padding: 5%;
+	background: url("./imgFilm/service-bg.jpg") no-repeat center center/cover;
 }
 .services h4 {
 	position: relative;
@@ -249,13 +259,16 @@ option {
 	padding: 0.5rem;
 	color: #ebeb21eb;
 }
+.icon i{
+	font-size: 4rem;
+}
 .iconify:hover {
 	background-color: #ebeb21eb;
 	transition: all 0.5s ease;
 }
 #Top-rated {
-	min-height: 100vh;
-	background: url("../IMAGES/imgFilm/top-rated-bg.jpg") no-repeat center center/cover;
+	padding: 5%;
+	background: url("./imgFilm/top-rated-bg.jpg") no-repeat center center/cover;
 }
 .n-btn {
 	background-color: rgba(0, 0, 0, 0.74);
@@ -275,33 +288,31 @@ option {
 	margin: 1rem 0;
 }
 #best-tvshows {
-	min-height: 100vh;
-	background: url("../IMAGES/imgFilm/tv-series-bg.jpg");
+	/* height: 90vh; */
+	padding: 5%;
+	background: url("./imgFilm/tv-series-bg.jpg");
 }
-@media screen and (max-width: 1200px) {
-	html {
-		font-size: 13px;
-	}
-}
+
 .burg {
+	width: 5rem;
 	position: fixed;
 	top: 1rem;
 	right: 0.3rem;
 	display: none;
 	cursor: pointer;
+	transition: all .3s ease-in;
 }
 .ling {
-	width: 2rem;
-	height: 5px;
+	width: 4rem;
+	height: 11px;
 	background-color: #ebeb21eb;
-	margin: 0.3rem 0.5rem;
-	border-radius: 0.2rem;
+	margin: 0.5rem 0.5rem;
+	border-radius: 0.5rem;
 }
 .footer {
-	/* min-height: 100vh; */
 }
 .Trial {
-	background: url(../IMAGES/imgFilm/cta-bg.jpg);
+	background: url(./imgFilm/cta-bg.jpg);
 	height: 18rem;
 	margin: auto;
 	display: flex;
@@ -318,6 +329,9 @@ option {
 
 .social-links {
 	padding: 0 2rem;
+}
+.social-links i{
+	font-size: 2.3rem;
 }
 .Trial h1 {
 	font-size: 2.5rem;
@@ -356,7 +370,12 @@ option {
 }
 .footer-links {
 	height: 17rem;
-	background: url("../IMAGES/imgFilm/footer-bg.jpg");
+	background: url("./imgFilm/footer-bg.jpg");
+}
+@media screen and (max-width: 1200px) {
+	html {
+		font-size: 12px;
+	}
 }
 @media screen and (max-width: 1090px) {
 	#navigation {
@@ -367,9 +386,7 @@ option {
 		transition: all 0.5s ease;
 		width: 100%;
 	}
-	html {
-		font-size: 8px;
-	}
+	
 	.burg {
 		display: block;
 	}

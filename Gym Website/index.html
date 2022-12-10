@@ -1,242 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Fitness Gym!</title>
-		<link rel="stylesheet" href="Utility.css" />
-		<link rel="stylesheet" href="style.css" />
-		<script defer src="main.js"></script>
-		<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-<link rel="manifest" href="./site.webmanifest">
-	</head>
-	<body>
-		<header class="flex item-center space-between">
-			<div class="logo">
-				<img src="assets/logo.png" alt="" />
-			</div>
-			<nav class="navBar item-center flex">
-				<li><a class="p-min" href="#home">Home</a></li>
-				<li><a class="p-min" href="#explore">Programs</a></li>
-				<li><a class="p-min" href="#plans">Plans</a></li>
-				<li><a class="p-min" href="#choose">Why us</a></li>
-				<li><a class="p-min" href="#testimonials">Testimonails</a></li>
-			</nav>
-			<img class="menu-btn" src="assets/bars.png" alt="">
-			<div class="button">
-				<button class="color-dark weight-600 btn bg-white">JOIN NOW</button>
-			</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fitness Gym!</title>
+        <link rel="stylesheet" href="Utility.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="main.js"></script>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./favicon-16x16.png"
+        />
+        <link rel="manifest" href="./site.webmanifest" />
+    </head>
+    <body>
+        <header class="flex item-center space-between">
+            <div class="logo">
+                <img alt="image" src="assets/logo.png" alt="" />
+            </div>
+            <nav class="navBar item-center flex">
+                <li><a class="p-min" href="#home">Home</a></li>
+                <li><a class="p-min" href="#explore">Programs</a></li>
+                <li><a class="p-min" href="#plans">Plans</a></li>
+                <li><a class="p-min" href="#choose">Why us</a></li>
+                <li><a class="p-min" href="#testimonials">Testimonails</a></li>
+            </nav>
+            <img alt="image" class="menu-btn" src="assets/bars.png" alt="" />
+            <div class="button">
+                <button class="color-dark weight-600 btn bg-white">
+                    JOIN NOW
+                </button>
+            </div>
+        </header>
+        <section id="home">
+            <div class="left">
+                <div class="slogan">
+                    <p>LET'S GET FIT NOW</p>
+                </div>
+                <h1 class="m-2"><span class="outline-txt">SHAPE</span> YOUR</h1>
+                <h1 class="m-2">IDEAL BODY</h1>
+                <p class="p-font weight-600 mb-1">
+                    We are here to help you make a heavy body & get the most out
+                    of your life
+                </p>
+                <div class="counters">
+                    <div class="count">
+                        <span class="number">90 +</span>
+                        <p>EXPERT COACHES</p>
+                    </div>
+                    <div class="count">
+                        <span class="number">1050 +</span>
+                        <p>MEMBERS JOINED</p>
+                    </div>
+                    <div class="count">
+                        <span class="number">20 +</span>
+                        <p>FITNESS PROGRAMS</p>
+                    </div>
+                    <div class="cal-det flex">
+                        <img
+                            alt="image"
+                            src="assets/calories.png"
+                            width="60"
+                            alt=""
+                        />
+                        <div>
+                            <p>Calories Burned</p>
+                            <p class="weight-600">220kcal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btns">
+                    <button class="btn br-0">Get Started</button>
+                    <button class="btn br-0 outline color-white">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+            <div class="right flex">
+                <div class="hero">
+                    <img alt="image" src="assets/hero_image.png" alt="" />
+                </div>
+                <div>
+                    <div class="hrt">
+                        <img alt="image" src="assets/heart.png" width="30" />
+                        <p class="color-gray">Heart Rate</p>
+                        <p class="weight-600">116 bpm</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HOME SECTION ENDS HERE -->
 
-		</header>
-		<section id="home">
-			<div class="left">
-				<div class="slogan">
-					<p>LET'S GET FIT NOW</p>
-				</div>
-				<h1 class="m-2"><span class="outline-txt">SHAPE</span> YOUR</h1>
-				<h1 class="m-2">IDEAL BODY</h1>
-				<p class="p-font weight-600 mb-1">We are here to help you make a heavy body & get the most out of your life</p>
-				<div class="counters">
-					<div class="count">
-						<span class="number">90 +</span>
-						<p>EXPERT COACHES</p>
-					</div>
-					<div class="count">
-						<span class="number">1050 +</span>
-						<p>MEMBERS JOINED</p>
-					</div>
-					<div class="count">
-						<span class="number">20 +</span>
-						<p>FITNESS PROGRAMS</p>
-					</div>
-					<div class="cal-det flex">
-						<img src="assets/calories.png" width="60" alt="" />
-						<div>
-							<p>Calories Burned</p>
-							<p class="weight-600">220kcal</p>
-						</div>
-					</div>
-				</div>
-				<div class="btns">
-					<button class="btn br-0">Get Started</button>
-					<button class="btn br-0 outline color-white">Get Started</button>
-				</div>
-			</div>
-			<div class="right flex">
-				<div class="hero">
-					<img src="assets/hero_image.png" alt="" />
-				</div>
-				<div>
-					<div class="hrt">
-						<img src="assets/heart.png" width="30" />
-						<p class="color-gray">Heart Rate</p>
-						<p class="weight-600">116 bpm</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- HOME SECTION ENDS HERE -->
-
-		<!-- EXPLORING SECTION STARTS HERE -->
-		<section id="explore" class="mt-5">
-			<h2 class="med-font center mb-3"><span class="outline-txt">EXPLORE</span> OUR PROGRAMS TO <span class="outline-txt">SHAPE</span> YOU</h2>
-			<div class="row px-5 grid gap-3">
-				<div class="col">
-					<img src="assets/dumbell.svg" alt="" width="25" />
-					<h3>Strength Training</h3>
-					<p>In this program we will help you get the best Strength coperate with us</p>
-					<a href="#">JOIN NOW <img src="assets/rightArrow.png" align="center" width="13" /></a>
-				</div>
-				<div class="col">
-					<img src="assets/runing.svg" alt="" width="27" />
-					<h3>Cardio Training</h3>
-					<p>In this program you are trained to do sequential moves in range of 20.</p>
-					<a href="#">JOIN NOW <img src="assets/rightArrow.png" align="center" width="13" /></a>
-				</div>
-				<div class="col">
-					<img src="assets/flame.svg" alt="" width="23" />
-					<h3>Fat Burning</h3>
-					<p>this program will help you to loss the weight in less time. let's get Started</p>
-					<a href="#">JOIN NOW <img src="assets/rightArrow.png" align="center" width="13" /></a>
-				</div>
-				<div class="col">
-					<img src="assets/heartHealth.svg" alt="" width="30" />
-					<h3>Strength Training</h3>
-					<p>This program is designed for those who exercises only for their body fitness</p>
-					<a href="#">JOIN NOW <img src="assets/rightArrow.png" align="center" width="13" /></a>
-				</div>
-			</div>
-		</section>
-		<section id="choose">
-			<div class="left-imgs flex">
-				<div>
-					<img class="img-1" src="assets/img.png" alt="" />
-				</div>
-				<div>
-					<div>
-						<img src="assets/image2.png" alt="" />
-					</div>
-					<div class="flex gap-min">
-						<div>
-							<img src="assets/image3.png" alt="" />
-						</div>
-						<div>
-							<img src="assets/image4.png" alt="" />
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="right-adds">
-				<p class="weight-600 main-color">SOME REASONS</p>
-				<h2 class="small-font">
-					<span class="outline-txt">WHY</span>
-					CHOOSE US
-				</h2>
-				<p class="my-1 weight-600"><img class="mr-1" src="assets/tick.png" width="24" align="center" />OVER 90+ EXPERT COACHES</p>
-				<p class="my-1 weight-600"><img class="mr-1" src="assets/tick.png" width="24" align="center" />GET TRAINED FASTER & SMARTER</p>
-				<p class="my-1 weight-600"><img class="mr-1" src="assets/tick.png" width="24" align="center" />1 FREE PROGRAM FOR NEW MEMBERS</p>
-				<p class="my-1 weight-600"><img class="mr-1" src="assets/tick.png" width="24" align="center" />RELIABLE PARTNERS</p>
-				<p class="gray weight-500">OUR PARTNERS</p>
-				<div class="partners-img flex gap-1 mt-min">
-					<img class="ml-1" src="assets/adidas.png" width="45" />
-					<img class="ml-1" src="assets/nb.png" width="45" />
-					<img class="ml-1" src="assets/nike.png" width="45" />
-				</div>
-			</div>
-		</section>
-		<section id="plans" class="mt-5">
-			<h2 class="med-font center mb-3">
-				<span class="outline-txt">LET'S</span>
-				GO TO <span class="outline-txt">START YOUR</span> JOURNEY
-			</h2>
-			<div class="plan-cards">
-				<div class="plan-card basic">
-					<img class="mb-2" src="assets/heartHealth.svg" width="45" />
-					<h2>BASIC PLAN</h2>
-					<h2 class="my-1 med-font">$ 25</h2>
-					<p class="my-1 p-font"><img class="mr-1" align="center" src="assets/whiteTick.png" width="25" /> 2 hours of exercises</p>
-					<p class="my-1 p-font">
-						<img class="mr-1" align="center" src="assets/whiteTick.png" width="25" /> free consultation by coaches
-					</p>
-					<p class="my-1 p-font"><img class="mr-1" align="center" src="assets/whiteTick.png" width="25" /> Access to The Community</p>
-					<div class="mt-2">
-						<a href="#">See more benefits <img src="assets/rightArrow.png" width="14" /></a>
-					</div>
-					<button class="btn bg-white color-dark mt-3 max">JOIN NOW</button>
-				</div>
-				<div id="prem" class="plan-card prem">
-					<img class="mb-2" src="assets/heartHealth.svg" width="45" />
-					<h2>PREMIUM PLAN</h2>
-					<h2 class="my-1 med-font">$ 25</h2>
-					<p class="my-1 p-font"><img class="mr-1" align="center" src="assets/whiteTick.png" width="25" /> 5 hours of exercises</p>
-					<p class="my-1 p-font">
-						<img class="mr-1" align="center" src="assets/whiteTick.png" width="25" /> free consultation by coaches
-					</p>
-					<p class="my-1 p-font"><img class="mr-1" align="center" src="assets/whiteTick.png" width="25" /> Access to The minibar</p>
-					<div class="mt-2">
-						<a href="#">See more benefits <img src="assets/rightArrow.png" width="14" /></a>
-					</div>
-					<button class="btn bg-white color-dark mt-3 max">JOIN NOW</button>
-				</div>
-				<div class="plan-card pro">
-					<img class="mb-2" src="assets/heartHealth.svg" width="45" />
-					<h2>PRO PLAN</h2>
-					<h3 class="my-1 med-font">$ 25</h3>
-					<p class="my-1 p-font"><img class="mr-1" align="center" src="assets/whiteTick.png" width="25" /> 8 hours of exercises</p>
-					<p class="my-1 p-font">
-						<img class="mr-1" align="center" src="assets/whiteTick.png" width="25" /> free consultation by coaches
-					</p>
-					<p class="my-1 p-font"><img class="mr-1" align="center" src="assets/whiteTick.png" width="25" /> Access to The Community</p>
-					<div class="mt-2">
-						<a href="#">See more benefits <img src="assets/rightArrow.png" width="14" /></a>
-					</div>
-					<button class="btn bg-white hover color-dark mt-3 max">JOIN NOW</button>
-				</div>
-			</div>
-		</section>
-		<section id="testimonials" class="flex">
-			<div class="left-tests">
-				<p class="p-font weight-600 main-color">TESTIMONIALS</p>
-				<h2 class="med-font outline-txt">WHAT THEY</h2>
-				<h2 class="med-font">SAY ABOUT US</h2>
-				<p class="review-msg p-font">
-					I made the right choice by choosing the fitness club <br>
-					& by choosing the right plan & program
-				</p>
-				<p class="p-font weight-400"><span class="main-color user-name">METHEW HANDRIKSON</span> - <span class="post"> ENTREPRENEUR</span></p>
-			</div>
-			<div class="right-imgs flex">
-				<div class="navigators">
-					<img class="prev" src="assets/leftArrow.png" width="20">
-					<img class="next" src="assets/rightArrow.png" width="20">
-				</div>
-				<div class="user-imgs">
-					<img class="user-img" src="t-image1.png" alt="" />
-					<img class="user-img" src="t-image2.jpg" alt="" />
-					<img class="user-img" src="t-image3.jpg" alt="" />
-				</div>
-			</div>
-		</section> 
-		<div class="upfoot flex px-3 item-center space-around">
-			<div>
-				<h2 class="special med-font"><span class="outline-txt">READY TO</span> LEVEL UP</h2>
-				<h2 class="med-font">YOUR BODY<span class="outline-txt"> WITH US ?</span></h2>
-			</div>
-			<div class="input">
-				<input type="search" />
-				<button class="btn">JOIN NOW</button>
-			</div>
-		</div>
-		<footer class="center">
-			<div class="social-handles gap-4 flex content-center">
-				<a href="#"> <img src="assets/linkedin.png" width="35" /></a>
-				<a href="#"> <img src="assets/instagram.png" width="35" /></a>
-				<a href="#"> <img src="assets/github.png" width="35" /></a>
-			</div>
-			<img class="mt-3" src="assets/logo.png" width="200" />
-		</footer>
-	</body>
+        <!-- EXPLORING SECTION STARTS HERE -->
+        <section id="explore" class="mt-5">
+            <h2 class="med-font center mb-3">
+                <span class="outline-txt">EXPLORE</span> OUR PROGRAMS TO
+                <span class="outline-txt">SHAPE</span> YOU
+            </h2>
+            <div class="row px-5 grid gap-3">
+                <div class="col">
+                    <img
+                        alt="image"
+                        src="assets/dumbell.svg"
+                        alt=""
+                        width="25"
+                    />
+                    <h3>Strength Training</h3>
+                    <p>
+                        In this program we will help you get the best Strength
+                        coperate with us
+                    </p>
+                    <a href="#"
+                        >JOIN NOW
+                        <img
+                            alt="image"
+                            src="assets/rightArrow.png"
+                            align="center"
+                            width="13"
+                    /></a>
+                </div>
+                <div class="col">
+                    <img
+                        alt="image"
+                        src="assets/runing.svg"
+                        alt=""
+                        width="27"
+                    />
+                    <h3>Cardio Training</h3>
+                    <p>
+                        In this program you are trained to do sequential moves
+                        in range of 20.
+                    </p>
+                    <a href="#"
+                        >JOIN NOW
+                        <img
+                            alt="image"
+                            src="assets/rightArrow.png"
+                            align="center"
+                            width="13"
+                    /></a>
+                </div>
+                <div class="col">
+                    <img alt="image" src="assets/flame.svg" alt="" width="23" />
+                    <h3>Fat Burning</h3>
+                    <p>
+                        this program will help you to loss the weight in less
+                        time. let's get Started
+                    </p>
+                    <a href="#"
+                        >JOIN NOW
+                        <img
+                            alt="image"
+                            src="assets/rightArrow.png"
+                            align="center"
+                            width="13"
+                    /></a>
+                </div>
+                <div class="col">
+                    <img
+                        alt="image"
+                        src="assets/heartHealth.svg"
+                        alt=""
+                        width="30"
+                    />
+                    <h3>Strength Training</h3>
+                    <p>
+                        This program is designed for those who exercises only
+                        for their body fitness
+                    </p>
+                    <a href="#"
+                        >JOIN NOW
+                        <img
+                            alt="image"
+                            src="assets/rightArrow.png"
+                            align="center"
+                            width="13"
+                    /></a>
+                </div>
+            </div>
+        </section>
+        <section id="choose">
+            <div class="left-imgs flex">
+                <div>
+                    <img
+                        alt="image"
+                        class="img-1"
+                        src="assets/img.png"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <div>
+                        <img alt="image" src="assets/image2.png" alt="" />
+                    </div>
+                    <div class="flex gap-min">
+                        <div>
+                            <img alt="image" src="assets/image3.png" alt="" />
+                        </div>
+                        <div>
+                            <img alt="image" src="assets/image4.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-adds">
+                <p class="weight-600 main-color">SOME REASONS</p>
+                <h2 class="small-font">
+                    <span class="outline-txt">WHY</span>
+                    CHOOSE US
+                </h2>
+                <p class="my-1 weight-600">
+                    <img
+                        alt="image"
+                        class="mr-1"
+                        src="assets/tick.png"
+                        width="24"
+                        align="center"
+                    />OVER 90+ EXPERT COACHES
+                </p>
+                <p class="my-1 weight-600">
+                    <img
+                        alt="image"
+                        class="mr-1"
+                        src="assets/tick.png"
+                        width="24"
+                        align="center"
+                    />GET TRAINED FASTER & SMARTER
+                </p>
+                <p class="my-1 weight-600">
+                    <img
+                        alt="image"
+                        class="mr-1"
+                        src="assets/tick.png"
+                        width="24"
+                        align="center"
+                    />1 FREE PROGRAM FOR NEW MEMBERS
+                </p>
+                <p class="my-1 weight-600">
+                    <img
+                        alt="image"
+                        class="mr-1"
+                        src="assets/tick.png"
+                        width="24"
+                        align="center"
+                    />RELIABLE PARTNERS
+                </p>
+                <p class="gray weight-500">OUR PARTNERS</p>
+                <div class="partners-img flex gap-1 mt-min">
+                    <img
+                        alt="image"
+                        class="ml-1"
+                        src="assets/adidas.png"
+                        width="45"
+                    />
+                    <img
+                        alt="image"
+                        class="ml-1"
+                        src="assets/nb.png"
+                        width="45"
+                    />
+                    <img
+                        alt="image"
+                        class="ml-1"
+                        src="assets/nike.png"
+                        width="45"
+                    />
+                </div>
+            </div>
+        </section>
+        <section id="plans" class="mt-5">
+            <h2 class="med-font center mb-3">
+                <span class="outline-txt">LET'S</span>
+                GO TO <span class="outline-txt">START YOUR</span> JOURNEY
+            </h2>
+            <div class="plan-cards">
+                <div class="plan-card basic">
+                    <img
+                        alt="image"
+                        class="mb-2"
+                        src="assets/heartHealth.svg"
+                        width="45"
+                    />
+                    <h2>BASIC PLAN</h2>
+                    <h2 class="my-1 med-font">$ 25</h2>
+                    <p class="my-1 p-font">
+                        <img
+                            alt="image"
+                            class="mr-1"
+                            align="center"
+                            src="assets/whiteTick.png"
+                            width="25"
+                        />
+                        2 hours of exercises
+                    </p>
+                    <p class="my-1 p-font">
+                        <img
+                            alt="image"
+                            class="mr-1"
+                            align="center"
+                            src="assets/whiteTick.png"
+                            width="25"
+                        />
+                        free consultation by coaches
+                    </p>
+                    <p class="my-1 p-font">
+                        <img
+                            alt="image"
+                            class="mr-1"
+                            align="center"
+                            src="assets/whiteTick.png"
+                            width="25"
+                        />
+                        Access to The Community
+                    </p>
+                    <div class="mt-2">
+                        <a href="#"
+                            >See more benefits
+                            <img
+                                alt="image"
+                                src="assets/rightArrow.png"
+                                width="14"
+                        /></a>
+                    </div>
+                    <button class="btn bg-white color-dark mt-3 max">
+                        JOIN NOW
+                    </button>
+                </div>
+                <div id="prem" class="plan-card prem">
+                    <img
+                        alt="image"
+                        class="mb-2"
+                        src="assets/heartHealth.svg"
+                        width="45"
+                    />
+                    <h2>PREMIUM PLAN</h2>
+                    <h2 class="my-1 med-font">$ 25</h2>
+                    <p class="my-1 p-font">
+                        <img
+                            alt="image"
+                            class="mr-1"
+                            align="center"
+                            src="assets/whiteTick.png"
+                            width="25"
+                        />
+                        5 hours of exercises
+                    </p>
+                    <p class="my-1 p-font">
+                        <img
+                            alt="image"
+                            class="mr-1"
+                            align="center"
+                            src="assets/whiteTick.png"
+                            width="25"
+                        />
+                        free consultation by coaches
+                    </p>
+                    <p class="my-1 p-font">
+                        <img
+                            alt="image"
+                            class="mr-1"
+                            align="center"
+                            src="assets/whiteTick.png"
+                            width="25"
+                        />
+                        Access to The minibar
+                    </p>
+                    <div class="mt-2">
+                        <a href="#"
+                            >See more benefits
+                            <img
+                                alt="image"
+                                src="assets/rightArrow.png"
+                                width="14"
+                        /></a>
+                    </div>
+                    <button class="btn bg-white color-dark mt-3 max">
+                        JOIN NOW
+                    </button>
+                </div>
+                <div class="plan-card pro">
+                    <img
+                        alt="image"
+                        class="mb-2"
+                        src="assets/heartHealth.svg"
+                        width="45"
+                    />
+                    <h2>PRO PLAN</h2>
+                    <h3 class="my-1 med-font">$ 25</h3>
+                    <p class="my-1 p-font">
+                        <img
+                            alt="image"
+                            class="mr-1"
+                            align="center"
+                            src="assets/whiteTick.png"
+                            width="25"
+                        />
+                        8 hours of exercises
+                    </p>
+                    <p class="my-1 p-font">
+                        <img
+                            alt="image"
+                            class="mr-1"
+                            align="center"
+                            src="assets/whiteTick.png"
+                            width="25"
+                        />
+                        free consultation by coaches
+                    </p>
+                    <p class="my-1 p-font">
+                        <img
+                            alt="image"
+                            class="mr-1"
+                            align="center"
+                            src="assets/whiteTick.png"
+                            width="25"
+                        />
+                        Access to The Community
+                    </p>
+                    <div class="mt-2">
+                        <a href="#"
+                            >See more benefits
+                            <img
+                                alt="image"
+                                src="assets/rightArrow.png"
+                                width="14"
+                        /></a>
+                    </div>
+                    <button class="btn bg-white hover color-dark mt-3 max">
+                        JOIN NOW
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="flex">
+            <div class="left-tests">
+                <p class="p-font weight-600 main-color">TESTIMONIALS</p>
+                <h2 class="med-font outline-txt">WHAT THEY</h2>
+                <h2 class="med-font">SAY ABOUT US</h2>
+                <p class="review-msg p-font">
+                    I made the right choice by choosing the fitness club <br />
+                    & by choosing the right plan & program
+                </p>
+                <p class="p-font weight-400">
+                    <span class="main-color user-name">METHEW HANDRIKSON</span>
+                    - <span class="post"> ENTREPRENEUR</span>
+                </p>
+            </div>
+            <div class="right-imgs flex">
+                <div class="navigators">
+                    <img
+                        alt="image"
+                        class="prev"
+                        src="assets/leftArrow.png"
+                        width="20"
+                    />
+                    <img
+                        alt="image"
+                        class="next"
+                        src="assets/rightArrow.png"
+                        width="20"
+                    />
+                </div>
+                <div class="user-imgs">
+                    <img class="user-img" src="assets/t-image1.png" alt="image" />
+                </div>
+            </div>
+        </section>
+        <div class="upfoot flex px-3 item-center space-around">
+            <div>
+                <h2 class="special med-font">
+                    <span class="outline-txt">READY TO</span> LEVEL UP
+                </h2>
+                <h2 class="med-font">
+                    YOUR BODY<span class="outline-txt"> WITH US ?</span>
+                </h2>
+            </div>
+            <div class="input">
+                <input title="search" type="search" />
+                <button class="btn">JOIN NOW</button>
+				
+            </div>
+        </div>
+        <footer class="center">
+            <div class="social-handles gap-4 flex content-center">
+                <a href="#">
+                    <img alt="image" src="assets/linkedin.png" width="35"
+                /></a>
+                <a href="#">
+                    <img alt="image" src="assets/instagram.png" width="35"
+                /></a>
+                <a href="#">
+                    <img alt="image" src="assets/github.png" width="35"
+                /></a>
+            </div>
+            <img alt="image" class="mt-3" src="assets/logo.png" width="200" />
+        </footer>
+    </body>
 </html>

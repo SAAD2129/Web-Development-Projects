@@ -8,14 +8,13 @@
   font-family: "Poppins", sans-serif;
   /* font-family: "Roboto", sans-serif; */
 }
-html{
-  scroll-behavior: smooth;
+.z-50{
+  z-index: 50;
 }
-
 :root {
-  --main-color:#ff5361;
-  --bg-color: #ff5361;
-  --hover-color: #b33d47;
+  --main-color: rgb(247, 160, 78);
+  --main2-color: rgb(198, 101, 11);
+  --hover-color: rgb(161, 112, 66);
   --font-color: #fff;
   --font2-color: #585b5b;
   --trans-03: transition: all 0.3s ease-in;
@@ -30,14 +29,8 @@ html{
 .font-color {
   color: var(--font-color);
 }
-.weight-normal{
-  font-weight: normal;
-}
-.color-dark{
-  color: rgb(8, 8, 8)!important;
-}
-.box-s{
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2);
+.line-height{
+  line-height: 2rem;
 }
 /*  === === === === === ==> ALL COLOR PROPERTIES ENDS HERE */
 
@@ -48,31 +41,11 @@ html{
 .bg-color {
   background-color: var(--main-color);
 }
-.text-right{
-  text-align: right;
+.bg-dark{
+  color: #fff;
+  background-color: #000;
 }
-.bottom::after{
-  content: '';
-  width: 3rem;
-  height: .3rem;
-  position: absolute;
-  display: block;
-  margin: auto;
-  left: 49%;
-  bottom:18%;
-  background-color: var(--main-color);
-}
-.left::before{
-  content: '';
-  width: 3rem;
-  height: .3rem;
-  position: absolute;
-  display: block;
-  margin: auto;
-  left: 0%;
-  bottom:20%;
-  background-color: var(--main-color);
-}
+
 /*  === === === === === ==> ALL BACKGROUND COLOR PROPERTIES ENDS HERE */
 
 /*  === === === === === ==> ALL HOVER COLOR PROPERTIES STARTS HERE */
@@ -88,33 +61,29 @@ html{
   cursor: pointer;
 }
 .heading {
-  font-size: 6rem;
+  font-size: 7rem;
 }
 .big-font {
-  font-size: 5rem;
+  font-size: 6rem;
 }
 .exlarge-font {
-  font-size: 4.1rem;
+  font-size: 5rem;
 }
 .large-font {
-  font-size: 3.6rem;
+  font-size: 4rem;
 }
 .med-font {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .small-font {
-  font-size: 2.5rem;
-}
-.exsmall-font {
-  font-size: 1.8rem;
-}
-.line-height{
-  line-height: 1.8rem;
+  font-size: 3rem;
 }
 .inverted {
   filter: invert(100%);
 }
-
+.exsmall-font {
+  font-size: 2rem;
+}
 .p-font {
   font-size: 1.15rem;
 }
@@ -316,91 +285,21 @@ html{
 .py-5 {
   padding: 5rem 0 !important;
 }
-.pl-1 {
-  padding-left: 1rem !important;
-}
-.pl-2 {
-  padding-left: 2rem !important;
-}
-.pl-3 {
-  padding-left: 3rem !important;
-}
-.pl-4 {
-  padding-left: 4rem !important;
-}
-.pl-5 {
-  padding-left: 5rem !important;
-}
-.pr-1 {
-  padding-right: 1rem !important;
-}
-.pr-2 {
-  padding-right: 2rem !important;
-}
-.pr-3 {
-  padding-right: 3rem !important;
-}
-.pr-4 {
-  padding-right: 4rem !important;
-}
-.pr-5 {
-  padding-right: 5rem !important;
-}
-.pt-1 {
-  padding-top: 1rem !important;
-}
-.pt-2 {
-  padding-top: 2rem !important;
-}
-.pt-3 {
-  padding-top: 3rem !important;
-}
-.pt-4 {
-  padding-top: 4rem !important;
-}
-.pt-5 {
-  padding-top: 5rem !important;
-}
-.pb-1 {
-  padding-bottom: 1rem  !important;
-}
-.pb-2 {
-  padding-bottom: 2rem  !important;
-}
-.pb-3 {
-  padding-bottom: 3rem  !important;
-}
-.pb-4 {
-  padding-bottom: 4rem  !important;
-}
-.pb-5 {
-  padding-bottom: 5rem  !important;
-}
 .center {
   text-align: center !important;
 }
-
-.weight-500 {
-  font-weight: 500 !important;
-}
-.weight-600 {
-  font-weight: 600 !important;
-}
-.weight-700 {
-  font-weight: 700 !important;
-}
 .bold {
-  font-weight: bold !important;
-}
-.bolder {
   font-weight: bolder !important;
 }
 
 .block {
   display: block;
 }
+.inline-b{
+  display: inline-block;
+}
 .m-auto {
-  margin: 1rem auto !important;
+  margin: 2rem auto !important;
 }
 .p-min {
   padding: 0.5rem !important;
@@ -445,52 +344,59 @@ html{
 .width-100 {
   width: 100%;
 }
+.width-90 {
+  width: 90%;
+}
+.width-80 {
+  width: 80%;
+}
+.width-70 {
+  width: 70%;
+}
+.width-60 {
+  width: 60%;
+}
+.width-50 {
+  width: 50%;
+}
+.width-40{
+  width:40%;
+}
 /*  === === === === === ==> ALL BUTTONS PROPERTIES STARTS HERE */
 
 .btn {
   cursor: pointer;
   border-radius: 0.2rem;
   padding: 0.5rem 1rem;
-  margin: 1rem 0;
-  width: max-content;
-
-  color: rgb(4, 4, 4);
+  margin: 1rem auto;
+  color: #fff;
+  font-weight: bold;
   background-color: var(--main-color);
   transition: all 0.4s ease;
   border: 2px solid transparent;
-  text-align: center;
 }
 .btn:hover {
   background-color: var(--hover-color);
 }
-.btn-custom {
-  width: 30%;
-  display: block;
-  color: #fff;
-  letter-spacing: .07rem;
-}
-.m-auto
+
 .btn-max {
   width: 100%;
-  font-size: 1.1rem;
-  display: block;
+  font-size: 1rem;
+  display: inline-block;
   letter-spacing: .3rem;
-}
-.outline{
-  background-color: transparent;
-  color: var(--main-color);
-  border: 2px solid var(--main-color);
 }
 .btn-big {
   letter-spacing: .2rem;
   width: 50%;
-  font-size: 1rem;
-  display: block;
+  display: inline-block;
 }
 .btn-sm {
   padding: 0.3rem 0.8rem;
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+}
+.btn-content{
+  width: max-content;
 }
 
 .btn-dark {
@@ -503,43 +409,7 @@ html{
 .btn-curve {
   border-radius: 3rem;
 }
-.btn-light{
-  color: #1c1b1b;
-  background: #fff;
-}
-.btn-light:hover{
-  color: #1c1b1b;
-  background: rgb(220, 212, 212);
-}
+
 /*  === === === === === ==> ALL BUTTONS  PROPERTIES ENDS HERE */
-/*  === === === === === ==> ALL EXTRA  PROPERTIES STARTS HERE */
 
 
-.layer {
-  background: linear-gradient(
-    180deg,
-    rgba(245, 186, 196, 0.01),
-    rgba(245, 186, 196, 0.859)
-    );
-    width: 100%;
-    height: 0%;
-    position: absolute;
-    bottom: 0;
-    transition: all 0.2s ease-in-out;
-    z-index: -1;
-  }
-  /*  === === === === === ==> ALL EXTRA  PROPERTIES ENDS HERE */
-  .relative{
-    position: relative;
-  }
-  /* #Navigation {
-    display: block;
-    position: absolute;
-    top: -30rem;
-    background-color: #fff;
-    text-align: center;
-    left: 0;
-    width: 100%;
-    transition: all 0.2s ease;
-    z-index: -53;
-  } */
